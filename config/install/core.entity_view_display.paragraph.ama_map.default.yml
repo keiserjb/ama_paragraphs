@@ -9,35 +9,37 @@ dependencies:
     - simple_gmap
 id: paragraph.ama_map.default
 targetEntityType: paragraph
-bundle: ama_map
+bundle: map
 mode: default
 content:
-  ama_map_header:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 0
-    region: content
-  ama_map_map:
+  type: string
+  label: hidden
+  link_to_entity: false
+  third_party_settings:
+    field_formatter_class:
+      class: ''
+  weight: 0
+  region: content
+  field_map:
     type: simple_gmap
     label: hidden
     settings:
       include_map: true
       include_static_map: false
-      include_link: false
+      include_link: true
       include_text: false
-      iframe_height: '200'
-      iframe_width: '200'
+      iframe_height: '500'
+      iframe_width: '800'
       iframe_title: ''
       static_scale: 1
-      zoom_level: 14
+      zoom_level: 17
       link_text: 'View larger map'
-      map_type: m
+      map_type: k
       langcode: en
       apikey: ''
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     weight: 1
     region: content
 hidden: {  }
