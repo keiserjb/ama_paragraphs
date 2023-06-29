@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.ama_accordion_item
+    - paragraphs.paragraphs_type.ama_accordion_item
+    - paragraphs.paragraphs_type.ama_accordion_jquery
+  module:
+    - entity_reference_revisions
+id: paragraph.ama_accordion_jquery.ama_accordion_item
+field_name: ama_accordion_item
+entity_type: paragraph
+bundle: ama_accordion_jquery
+label: 'Accordion Item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      ama_accordion_item: ama_accordion_item
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_item:
+        weight: 3
+        enabled: true
+      accordion_jquery:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

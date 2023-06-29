@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.ama_bp_accordion_header
+    - paragraphs.paragraphs_type.ama_bp_accordion
+id: paragraph.ama_bp_accordion.ama_bp_accordion_header
+field_name: ama_bp_accordion_header
+entity_type: paragraph
+bundle: ama_bp_accordion
+label: Header
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

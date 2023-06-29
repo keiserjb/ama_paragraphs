@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.ama_bp_card_link
+    - paragraphs.paragraphs_type.ama_bp_card
+  module:
+    - link
+id: paragraph.ama_bp_card.ama_bp_card_link
+field_name: ama_bp_card_link
+entity_type: paragraph
+bundle: ama_bp_card
+label: 'Card Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

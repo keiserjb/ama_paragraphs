@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ama_inline_image.ama_classy_width
+    - field.field.paragraph.ama_inline_image.ama_inline_image
+    - paragraphs.paragraphs_type.ama_inline_image
+  module:
+    - field_formatter_class
+    - image
+id: paragraph.ama_inline_image.default
+targetEntityType: paragraph
+bundle: ama_inline_image
+mode: default
+content:
+  ama_inline_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: content
+hidden:
+  ama_classy_width: true

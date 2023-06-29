@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.ama_youtube_video
+    - paragraphs.paragraphs_type.ama_youtube
+  module:
+    - youtube
+id: paragraph.ama_youtube.ama_youtube_video
+field_name: ama_youtube_video
+entity_type: paragraph
+bundle: ama_youtube
+label: 'YouTube Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: youtube

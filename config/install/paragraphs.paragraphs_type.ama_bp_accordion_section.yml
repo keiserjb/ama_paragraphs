@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ama_bp_accordion_section
+label: 'Accordion Section'
+icon_uuid: null
+icon_default: null
+description: 'Section for Bootstrap Accordion'
+behavior_plugins: {  }

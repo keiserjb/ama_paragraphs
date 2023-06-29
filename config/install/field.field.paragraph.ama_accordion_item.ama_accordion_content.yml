@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.ama_accordion_content
+    - paragraphs.paragraphs_type.ama_accordion_item
+  module:
+    - text
+id: paragraph.ama_accordion_item.ama_accordion_content
+field_name: ama_accordion_content
+entity_type: paragraph
+bundle: ama_accordion_item
+label: 'Accordion Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

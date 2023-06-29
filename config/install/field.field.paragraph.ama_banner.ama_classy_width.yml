@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.ama_classy_width
+    - paragraphs.paragraphs_type.ama_banner
+id: paragraph.ama_banner.ama_classy_width
+field_name: ama_classy_width
+entity_type: paragraph
+bundle: ama_banner
+label: 'Classy Width'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: classy_paragraphs
+  handler_settings:
+    filter:
+      type: target_bundles
+      target_bundles:
+        full_width: full_width
+        normal_width: normal_width
+      negate: 0
+    sort:
+      field: _none
+field_type: entity_reference

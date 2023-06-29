@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ama_photos.ama_photo
+    - image.style.medium
+    - paragraphs.paragraphs_type.ama_photos
+  module:
+    - field_formatter_class
+    - image
+id: paragraph.ama_photos.default
+targetEntityType: paragraph
+bundle: ama_photos
+mode: default
+content:
+  ama_photo:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: content
+hidden: {  }

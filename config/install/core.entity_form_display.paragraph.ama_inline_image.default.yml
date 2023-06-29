@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ama_inline_image.ama_classy_width
+    - field.field.paragraph.ama_inline_image.ama_inline_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.ama_inline_image
+  module:
+    - image
+_core:
+  default_config_hash: LezAtxWL5OIKtyanrQAHxilVt2WjO_I6Tj-qAZ2dGhQ
+id: paragraph.ama_inline_image.default
+targetEntityType: paragraph
+bundle: ama_inline_image
+mode: default
+content:
+  ama_classy_width:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  ama_inline_image:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

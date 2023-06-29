@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ama_photos.ama_photo
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.ama_photos
+  module:
+    - image
+_core:
+  default_config_hash: wG8YFI4D3ktzpAZFPgPvevXfondwbq1BWFrazns8NdM
+id: paragraph.ama_photos.default
+targetEntityType: paragraph
+bundle: ama_photos
+mode: default
+content:
+  ama_photo:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_photo:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

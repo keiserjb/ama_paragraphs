@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ama_file_upload.ama_file_upload
+    - paragraphs.paragraphs_type.ama_file_upload
+  module:
+    - file
+id: paragraph.ama_file_upload.default
+targetEntityType: paragraph
+bundle: ama_file_upload
+mode: default
+content:
+  ama_file_upload:
+    type: file_generic
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ama_file_upload
+label: 'File Upload'
+icon_uuid: null
+icon_default: null
+description: 'Upload a file like a pdf, txt, or zip.'
+behavior_plugins: {  }

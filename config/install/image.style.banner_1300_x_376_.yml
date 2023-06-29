@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: banner_1300_x_376_
+label: 'Banner (1300 x 376)'
+effects:
+  f7da2a2b-b6d1-4262-84e3-7decaf19b9c5:
+    uuid: f7da2a2b-b6d1-4262-84e3-7decaf19b9c5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1300
+      height: 376
+      anchor: center-center

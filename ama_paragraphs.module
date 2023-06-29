@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * AMA Paragraphs module file.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_theme().
+ */
+function ama_paragraphs_theme($existing, $type, $theme, $path) {
+  return [
+    'paragraph__default' => [
+      'base hook' => 'paragraph',
+    ],
+    'paragraph__ama_bp_accordion' => [
+      'base hook' => 'paragraph',
+    ],
+    'paragraph__ama_bp_card' => [
+      'base hook' => 'paragraph',
+    ]
+  ];
+}

@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ama_block.ama_block
+    - paragraphs.paragraphs_type.ama_block
+  module:
+    - block_field
+id: paragraph.ama_block.default
+targetEntityType: paragraph
+bundle: ama_block
+mode: default
+content:
+  ama_block:
+    type: block_field_default
+    weight: 0
+    region: content
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

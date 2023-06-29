@@ -1,0 +1,49 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ama_audio.ama_audio_file
+    - field.field.paragraph.ama_audio.ama_audio_title
+    - paragraphs.paragraphs_type.ama_audio
+  module:
+    - file
+id: paragraph.ama_audio.default
+targetEntityType: paragraph
+bundle: ama_audio
+mode: default
+content:
+  ama_audio_file:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  ama_audio_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_audio_file:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_audio_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: content
+hidden: {  }

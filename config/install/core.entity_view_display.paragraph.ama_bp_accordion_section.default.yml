@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ama_bp_accordion_section.ama_bp_section_body
+    - field.field.paragraph.ama_bp_accordion_section.ama_bp_section_title
+    - field.field.paragraph.ama_bp_accordion_section.ama_bp_show_button
+    - paragraphs.paragraphs_type.ama_bp_accordion_section
+  module:
+    - text
+id: paragraph.ama_bp_accordion_section.default
+targetEntityType: paragraph
+bundle: ama_bp_accordion_section
+mode: default
+content:
+  ama_bp_section_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  ama_bp_section_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  ama_bp_show_button:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: boolean
+    region: content
+hidden: {  }

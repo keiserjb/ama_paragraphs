@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ama_accordion_jquery
+label: Accordion
+icon_uuid: null
+icon_default: null
+description: 'Create an accordion.  Use Accordion Items inside Accordions.'
+behavior_plugins: {  }

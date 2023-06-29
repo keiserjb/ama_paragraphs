@@ -1,0 +1,25 @@
+
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.ama_video
+    - paragraphs.paragraphs_type.ama_youtube
+  module:
+    - video_embed_field
+id: paragraph.ama_youtube.ama_video
+field_name: ama_video
+entity_type: paragraph
+bundle: ama_youtube
+label: Video
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: vimeo
+    youtube: youtube
+    youtube_playlist: youtube_playlist
+field_type: video_embed_field

@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ama_accordion_jquery.ama_accordion_item
+    - field.field.paragraph.ama_accordion_jquery.ama_accordion_title
+    - paragraphs.paragraphs_type.ama_accordion_jquery
+  module:
+    - field_formatter_class
+    - heading
+    - paragraphs_jquery_ui_accordion
+id: paragraph.ama_accordion_jquery.default
+targetEntityType: paragraph
+bundle: ama_accordion_jquery
+mode: default
+content:
+  ama_accordion_item:
+    type: paragraphs_jquery_ui_accordion_formatter
+    label: hidden
+    settings:
+      bundle: ama_accordion_item
+      title: field_accordion_heading
+      content: field_accordion_content
+      active: 0
+      autoscroll: false
+      autoscroll_offset: ''
+      autoscroll_offset_toolbar: false
+      view_mode: default
+      simple_id: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 1
+    region: content
+  ama_accordion_title:
+    type: heading_text
+    label: hidden
+    settings:
+      size: h2
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

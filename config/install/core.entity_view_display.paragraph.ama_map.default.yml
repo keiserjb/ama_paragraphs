@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ama_map.ama_map_header
+    - field.field.paragraph.ama_map.ama_map_map
+    - paragraphs.paragraphs_type.ama_map
+  module:
+    - simple_gmap
+id: paragraph.ama_map.default
+targetEntityType: paragraph
+bundle: ama_map
+mode: default
+content:
+  ama_map_header:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  ama_map_map:
+    type: simple_gmap
+    label: hidden
+    settings:
+      include_map: true
+      include_static_map: false
+      include_link: false
+      include_text: false
+      iframe_height: '200'
+      iframe_width: '200'
+      iframe_title: ''
+      static_scale: 1
+      zoom_level: 14
+      link_text: 'View larger map'
+      map_type: m
+      langcode: en
+      apikey: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

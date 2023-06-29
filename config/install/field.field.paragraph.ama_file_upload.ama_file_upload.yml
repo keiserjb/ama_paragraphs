@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.ama_file_upload
+    - paragraphs.paragraphs_type.ama_file_upload
+  module:
+    - file
+id: paragraph.ama_file_upload.ama_file_upload
+field_name: ama_file_upload
+entity_type: paragraph
+bundle: ama_file_upload
+label: 'File Upload'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'txt pdf zip'
+  max_filesize: ''
+  description_field: true
+field_type: file

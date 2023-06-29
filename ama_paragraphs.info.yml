@@ -1,0 +1,31 @@
+name: AMA Paragraphs
+type: module
+description: Provides a collection of Paragraphs for AMA sites.
+package: Custom
+core_version_requirement: ^9 || ^10
+dependencies:
+  - drupal:file
+  - drupal:image
+  - drupal:link
+  - drupal:entity_reference_revisions
+  - audiofield
+  - block_field
+  - bg_image_formatter
+  - classy_paragraphs
+  - element_class_formatter
+  - element_class_formatter_responsive_image
+  - extra_image_field_classes
+  - field_formatter_class
+  - field_group
+  - heading
+  - html_formatter
+  - jquery_ui
+  - jquery_ui_accordion
+  - paragraphs_jquery_ui_accordion
+  - paragraphs
+  - responsive_image
+  - responsive_bg_image_formatter
+  - simple_gmap
+  - video_embed_facebook
+  - video_embed_field
+  - youtube

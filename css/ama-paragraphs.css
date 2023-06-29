@@ -1,0 +1,260 @@
+/*Banner paragraph */
+
+.paragraph--type--ama_banner {
+  position: relative;
+}
+
+.paragraph--type--ama_banner .background {
+  height: 366px;
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+}
+
+@media (max-width: 767px) {
+  .paragraph--type--ama_banner .background {
+    height: 250px;
+  }
+}
+
+.paragraph--type--ama_banner .data {
+  position: absolute;
+  left: 65px;
+  bottom: 30px;
+  top: 0;
+  width: 40%;
+  background: rgba(3, 25, 41, 0.77);
+  padding-top: 45px;
+  padding-left: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1219px) {
+  .paragraph--type--ama_banner .data {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .paragraph--type--ama_banner .data {
+    top: 0;
+    width: 60%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-bottom: 45px;
+    padding-top: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .paragraph--type--ama_banner .data {
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    left: 0;
+  }
+}
+
+.paragraph--type--ama_banner .data .title {
+  font-family: "TrendaBold";
+  font-weight: 700;
+  font-style: normal;
+  color: #FFFFFF;
+  letter-spacing: 0em;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 0px) and (max-width: 479px) {
+  .paragraph--type--ama_banner .data .title {
+    font-size: 1.5625rem;
+    line-height: 1.875rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 620px) {
+  .paragraph--type--ama_banner .data .title {
+    font-size: 1.75rem;
+    line-height: 2.1rem;
+  }
+}
+
+@media (min-width: 621px) and (max-width: 767px) {
+  .paragraph--type--ama_banner .data .title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .paragraph--type--ama_banner .data .title {
+    font-size: 2.1875rem;
+    line-height: 2.625rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1219px) {
+  .paragraph--type--ama_banner .data .title {
+    font-size: 2.8125rem;
+    line-height: 3.375rem;
+  }
+}
+
+@media (min-width: 1220px) {
+  .paragraph--type--ama_banner .data .title {
+    font-size: 2.8125rem;
+    line-height: 3.375rem;
+  }
+}
+
+.paragraph--type--ama_banner .data .title a {
+  color: #FFFFFF;
+}
+
+.paragraph--type--ama_banner .data .title a:hover {
+  opacity: 0.8;
+}
+
+.paragraph--type--ama_banner .data .summary {
+  font-family: "TrendaSemibold";
+  font-weight: 600;
+  font-style: normal;
+  color: #FFFFFF;
+  letter-spacing: 0em;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 0px) and (max-width: 479px) {
+  .paragraph--type--ama_banner .data .summary {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 620px) {
+  .paragraph--type--ama_banner .data .summary {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+}
+
+@media (min-width: 621px) and (max-width: 767px) {
+  .paragraph--type--ama_banner .data .summary {
+    font-size: 1.125rem;
+    line-height: 1.35rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .paragraph--type--ama_banner .data .summary {
+    font-size: 1.125rem;
+    line-height: 1.35rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1219px) {
+  .paragraph--type--ama_banner .data .summary {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 1220px) {
+  .paragraph--type--ama_banner .data .summary {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+.paragraph--type--ama_banner .data .summary p {
+  font-family: "TrendaSemibold";
+  font-weight: 600;
+  font-style: normal;
+  color: #FFFFFF;
+  letter-spacing: 0em;
+  margin: 0;
+}
+
+@media (min-width: 0px) and (max-width: 479px) {
+  .paragraph--type--ama_banner .data .summary p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 620px) {
+  .paragraph--type--ama_banner .data .summary p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+}
+
+@media (min-width: 621px) and (max-width: 767px) {
+  .paragraph--type--ama_banner .data .summary p {
+    font-size: 1.125rem;
+    line-height: 1.35rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .paragraph--type--ama_banner .data .summary p {
+    font-size: 1.125rem;
+    line-height: 1.35rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1219px) {
+  .paragraph--type--ama_banner .data .summary p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 1220px) {
+  .paragraph--type--ama_banner .data .summary p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+/* Adds Accordion container.*/
+.paragraph--ama-accordion-container {
+  padding-top: 15px;
+}
+.paragraph--ama-accordion-container .ama-accordion-button {
+  float: right;
+}
+/* Adds margin and padding to paragraphs in accordion section bodies. */
+.paragraph.paragraph--type--ama-accordion .panel-heading a {
+  display: block;
+  padding: 10px 10px;
+}
+.paragraph.paragraph--type--ama-accordion .panel-heading a:after {
+  float: right;
+}
+.paragraph.paragraph--type--ama-accordion .panel-heading a[aria-expanded="false"].display:after {
+  content: "+";
+}
+.paragraph.paragraph--type--ama-accordion .panel-heading a[aria-expanded="true"].display:after {
+  content: "-";
+}
+.paragraph.paragraph--type--ama-accordion .panel-collapse > .paragraph {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.paragraph.paragraph--type--ama-accordion .panel-collapse > .paragraph > .paragraph__column {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.paragraph.paragraph--type--ama-accordion .panel-collapse .paragraph:last-of-type > .paragraph__column {
+  padding-bottom: 15px;
+}
+.paragraph.paragraph--type--ama-accordion .panel-collapse .paragraph + .paragraph > .paragraph__column,
+.paragraph.paragraph--type--ama-accordion .panel-collapse .paragraph + .paragraph + .paragraph > .paragraph__column {
+  padding-bottom: 30px;
+}

@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.ama_block
+    - paragraphs.paragraphs_type.ama_block
+  module:
+    - block_field
+id: paragraph.ama_block.ama_block
+field_name: ama_block
+entity_type: paragraph
+bundle: ama_block
+label: Block
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids: {  }
+field_type: block_field

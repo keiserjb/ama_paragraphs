@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies: {  }
+id: map
+label: Map
+icon_uuid: null
+icon_default: null
+description: 'Add an address to generate a Google Map.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

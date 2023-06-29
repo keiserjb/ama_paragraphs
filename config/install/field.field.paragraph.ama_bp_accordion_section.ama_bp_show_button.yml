@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.ama_bp_show_button
+    - paragraphs.paragraphs_type.ama_bp_accordion_section
+id: paragraph.accordion_section.ama_bp_show_button
+field_name: ama_bp_show_button
+entity_type: paragraph
+bundle: ama_bp_accordion_section
+label: 'Display Expanded'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

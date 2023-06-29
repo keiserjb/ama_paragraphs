@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ama_youtube.ama_video_header
+    - paragraphs.paragraphs_type.ama_youtube
+id: paragraph.ama_youtube.default
+targetEntityType: paragraph
+bundle: ama_youtube
+mode: default
+content:
+  ama_video_header:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

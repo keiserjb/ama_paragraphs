@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ama_accordion_item.ama_accordion_content
+    - field.field.paragraph.ama_accordion_item.ama_accordion_heading
+    - paragraphs.paragraphs_type.ama_accordion_item
+  module:
+    - text
+id: paragraph.ama_accordion_item.default
+targetEntityType: paragraph
+bundle: ama_accordion_item
+mode: default
+content:
+  ama_accordion_content:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  ama_accordion_heading:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

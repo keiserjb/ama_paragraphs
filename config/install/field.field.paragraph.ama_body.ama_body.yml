@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.ama_body
+    - paragraphs.paragraphs_type.ama_body
+  module:
+    - text
+id: paragraph.body.field_body
+field_name: ama_body
+entity_type: paragraph
+bundle: ama_body
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

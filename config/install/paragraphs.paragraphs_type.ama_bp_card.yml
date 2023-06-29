@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ama_bp_card
+label: Card
+icon_uuid: null
+description: 'Create a card with an image at top, text in the middle, and a button on the bottom.'
+behavior_plugins: {  }

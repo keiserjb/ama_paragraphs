@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ama_audio
+label: 'Audio File'
+icon_uuid: null
+icon_default: null
+description: 'Upload an audio file such as a podcast.'
+behavior_plugins: {  }

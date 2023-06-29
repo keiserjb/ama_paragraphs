@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ama_full_width
+label: 'Full Width'
+classes: full-width

@@ -1,0 +1,69 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ama_bp_card.ama_bp_card_button_text
+    - field.field.paragraph.ama_bp_card.ama_bp_card_image
+    - field.field.paragraph.ama_bp_card.ama_bp_card_link
+    - field.field.paragraph.ama_bp_card.ama_bp_card_text
+    - field.field.paragraph.ama_bp_card.ama_bp_card_title
+    - paragraphs.paragraphs_type.ama_bp_card
+  module:
+    - element_class_formatter
+    - field_formatter_class
+    - link
+id: paragraph.ama_bp_card.default
+targetEntityType: paragraph
+bundle: ama_bp_card
+mode: default
+content:
+  ama_bp_card_button_text:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  ama_bp_card_image:
+    type: image_class
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+      class: 'card-img-top img-fluid'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: content
+  ama_bp_card_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  ama_bp_card_text:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  ama_bp_card_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.ama_banner_title
+    - paragraphs.paragraphs_type.ama_banner
+  module:
+    - heading
+id: paragraph.ama_banner.ama_banner_title
+field_name: ama_banner_title
+entity_type: paragraph
+bundle: ama_banner
+label: 'Banner Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  label: Heading
+  allowed_sizes:
+    h1: h1
+    h2: h2
+    h3: h3
+    h4: h4
+    h5: h5
+    h6: h6
+field_type: heading

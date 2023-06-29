@@ -1,0 +1,68 @@
+{
+    "name": "custom/ama_paragraphs",
+    "description": "Provides a collection of Paragraphs for AMA sites.",
+    "type": "drupal-module",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Justin Keiser",
+            "email": "justink@modelaircraft.org",
+            "role": "Maintainer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "cweagans/composer-patches": "^1.7",
+        "drupal/audiofield": "^1.13",
+        "drupal/bg_image_formatter": "^1.16",
+        "drupal/block_field": "^1.0@RC",
+        "drupal/classy_paragraphs": "^1.0@RC",
+        "drupal/element_class_formatter": "^2.0@beta",
+        "drupal/extra_image_field_classes": "^1.2",
+        "drupal/field_formatter_class": "^1.6",
+        "drupal/field_group": "^3.4",
+        "drupal/heading": "^1.7",
+        "drupal/html_formatter": "^2.0",
+        "drupal/jquery_ui": "^1.6",
+        "drupal/jquery_ui_accordion": "1.x-dev@dev",
+        "drupal/paragraphs": "^1.2",
+        "drupal/paragraphs_jquery_ui_accordion": "^1.5",
+        "drupal/simple_gmap": "3.1.x-dev@dev",
+        "drupal/video_embed_facebook": "^1.x-dev@dev",
+        "drupal/video_embed_field": "^2.5",
+        "drupal/youtube": "^2.0",
+        "mglaman/composer-drupal-lenient": "^1.0"
+    },
+    "require-dev": {
+        "drupal/config_update": "^2.0@alpha",
+        "drupal/features": "~3.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "cweagans/composer-patches": true,
+            "mglaman/composer-drupal-lenient": true
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "patches": {
+            "drupal/simple_gmap": {
+                "Drupal 10": "https://www.drupal.org/files/issues/2022-12-24/simple_gmap.3.1.x-dev.rector.patch"
+            },
+            "drupal/video_embed_facebook": {
+                "Drupal 10": "https://www.drupal.org/files/issues/2022-06-16/video_embed_facebook.1.x-dev.rector.patch"
+            },
+            "drupal/jquery_ui_accordion": {
+                "Drupal 10": "https://www.drupal.org/files/issues/2022-06-16/jquery_ui_accordion.1.x-dev.rector.patch"
+            },
+            "drupal/paragraphs_jquery_ui_accordion": {
+                "Drupal 10": "https://www.drupal.org/files/issues/2022-06-16/paragraphs_jquery_ui_accordion.1.5.rector.patch"
+            }
+        }
+    },
+    "drupal-lenient": {
+        "allowed-list": [
+            "drupal/simple_gmap", "drupal/jquery_ui_accordion", "drupal/paragraphs_jquery_ui_accordion", "drupal/video_embed_facebook"
+        ]
+    }
+}

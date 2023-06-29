@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ama_body.ama_body
+    - field.field.paragraph.ama_body.ama_classy_width
+    - paragraphs.paragraphs_type.ama_body
+  module:
+    - text
+id: paragraph.ama_body.default
+targetEntityType: paragraph
+bundle: ama_body
+mode: default
+content:
+  ama_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  ama_classy_width: true

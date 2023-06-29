@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ama_photos
+label: Photos
+icon_uuid: null
+icon_default: null
+description: 'Create a photo gallery.'
+behavior_plugins: {  }
