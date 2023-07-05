@@ -24,6 +24,15 @@ function ama_paragraphs_theme($existing, $type, $theme, $path) {
     'paragraph__ama_page_title' => [
       'base hook' => 'paragraph',
     ],
+    'paragraph__ama_quote'               => [
+      'base hook' => 'paragraph',
+    ],
+    'field__ama_quote_text'   => [
+      'base hook' => 'field',
+    ],
+    'field__ama_quote_author' => [
+      'base hook' => 'field',
+    ],
   ];
 }
 

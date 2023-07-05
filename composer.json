@@ -22,6 +22,7 @@
         "drupal/extra_image_field_classes": "^1.2",
         "drupal/field_formatter_class": "^1.6",
         "drupal/field_group": "^3.4",
+        "drupal/fontawesome": "^2.26",
         "drupal/heading": "^1.7",
         "drupal/html_formatter": "^2.0",
         "drupal/jquery_ui": "^1.6",

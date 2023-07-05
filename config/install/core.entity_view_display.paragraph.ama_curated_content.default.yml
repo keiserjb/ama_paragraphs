@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ama_curated_content.ama_curated_content
+    - field.field.paragraph.ama_curated_content.ama_heading
+    - paragraphs.paragraphs_type.ama_curated_content
+id: paragraph.ama_curated_content.default
+targetEntityType: paragraph
+bundle: ama_curated_content
+mode: default
+content:
+  ama_curated_content:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  ama_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  created: true
+  uid: true

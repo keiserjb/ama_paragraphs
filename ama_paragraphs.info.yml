@@ -17,6 +17,7 @@ dependencies:
   - extra_image_field_classes
   - field_formatter_class
   - field_group
+  - fontawesome
   - heading
   - html_formatter
   - jquery_ui

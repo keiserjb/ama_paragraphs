@@ -1,5 +1,5 @@
 # Custom module library for general purposes.
-ama_paragraphs:
+ama-paragraphs:
   js:
     js/ama-paragraphs.js: {}
   css:
@@ -12,7 +12,7 @@ ama_paragraphs:
 ama-bp-accordion:
   css:
     component:
-      css/ama-bootstrap-paragraphs-accordion.css: { preprocess: false, minified: true }
+      css/ama-bootstrap-paragraphs-accordion.css: { preprocess: false, minified: false }
   js:
     js/ama-bootstrap-paragraphs-accordion.js: { preprocess: false }
   dependencies:
@@ -20,7 +20,11 @@ ama-bp-accordion:
 ama-bp-card:
   css:
     component:
-      css/ama-bp-card.css: { preprocess: false, minified: true }
+      css/ama-bp-card.css: { preprocess: false, minified: false }
+ama-quote:
+  css:
+    component:
+      css/ama-quote.css: {}
 # Third-party library (self hosted).
 jquery-labelauty:
   remote: https://github.com/fntneves/jquery-labelauty
