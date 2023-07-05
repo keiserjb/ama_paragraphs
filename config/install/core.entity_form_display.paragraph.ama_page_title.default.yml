@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ama_page_title.ama_page_title_text
+    - paragraphs.paragraphs_type.ama_page_title
+id: paragraph.ama_page_title.default
+targetEntityType: paragraph
+bundle: ama_page_title
+mode: default
+content:
+  ama_page_title_text:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

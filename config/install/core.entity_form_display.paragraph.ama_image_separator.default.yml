@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ama_image_separator.ama_classy_width
+    - field.field.paragraph.ama_image_separator.ama_image_separator
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.ama_image_separator
+  module:
+    - image
+id: paragraph.ama_image_separator.default
+targetEntityType: paragraph
+bundle: ama_image_separator
+mode: default
+content:
+  ama_classy_width:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  ama_image_separator:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

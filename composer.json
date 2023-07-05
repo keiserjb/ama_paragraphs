@@ -17,6 +17,7 @@
         "drupal/bg_image_formatter": "^1.16",
         "drupal/block_field": "^1.0@RC",
         "drupal/classy_paragraphs": "^1.0@RC",
+        "drupal/default_paragraphs": "^2.0@RC",
         "drupal/element_class_formatter": "^2.0@beta",
         "drupal/extra_image_field_classes": "^1.2",
         "drupal/field_formatter_class": "^1.6",
@@ -57,12 +58,15 @@
             },
             "drupal/paragraphs_jquery_ui_accordion": {
                 "Drupal 10": "https://www.drupal.org/files/issues/2022-06-16/paragraphs_jquery_ui_accordion.1.5.rector.patch"
+            },
+            "drupal/default_paragraphs": {
+                "Drupal 10": "https://www.drupal.org/files/issues/2023-04-03/default_paragraphs.2.0.0-rc1.rector%234.patch"
             }
         }
     },
     "drupal-lenient": {
         "allowed-list": [
-            "drupal/simple_gmap", "drupal/jquery_ui_accordion", "drupal/paragraphs_jquery_ui_accordion", "drupal/video_embed_facebook"
+            "drupal/simple_gmap", "drupal/jquery_ui_accordion", "drupal/paragraphs_jquery_ui_accordion", "drupal/video_embed_facebook", "drupal/default_paragraphs"
         ]
     }
 }

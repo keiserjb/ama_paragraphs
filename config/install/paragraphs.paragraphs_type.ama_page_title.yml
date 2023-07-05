@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ama_page_title
+label: Page Title
+description: 'Use <em>Page Title</em> to add Page Title text.'

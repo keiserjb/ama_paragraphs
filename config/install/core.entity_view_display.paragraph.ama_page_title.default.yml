@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ama_page_title.ama_page_title_text
+    - paragraphs.paragraphs_type.ama_page_title
+  module:
+    - field_formatter_class
+    - heading
+id: paragraph.ama_page_title.default
+targetEntityType: paragraph
+bundle: ama_page_title
+mode: default
+content:
+  ama_page_title_text:
+    type: heading_text
+    label: above
+    settings:
+      size: h1
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: content
+hidden: {  }

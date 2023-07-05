@@ -7,7 +7,7 @@ dependencies:
 id: paragraph.ama_map.ama_map_header
 field_name: ama_map_header
 entity_type: paragraph
-bundle: map
+bundle: ama_map
 label: Header
 description: ''
 required: false

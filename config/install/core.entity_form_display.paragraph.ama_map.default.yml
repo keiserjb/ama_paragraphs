@@ -7,9 +7,25 @@ dependencies:
     - paragraphs.paragraphs_type.ama_map
 id: paragraph.ama_map.default
 targetEntityType: paragraph
-bundle: map
+bundle: ama_map
 mode: default
 content:
+  ama_map_header:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  ama_map_map:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_header:
     type: string_textfield
     weight: 1

@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ama_image_separator
+label: 'Image Separator'
+icon_uuid: null
+icon_default: null
+description: 'Add an image in between paragraphs of text that can go full width.'
+behavior_plugins: {  }

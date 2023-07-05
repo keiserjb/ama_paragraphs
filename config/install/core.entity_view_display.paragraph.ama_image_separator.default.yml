@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ama_image_separator.ama_classy_width
+    - field.field.paragraph.ama_image_separator.ama_image_separator
+    - paragraphs.paragraphs_type.ama_image_separator
+  module:
+    - field_formatter_class
+    - image
+id: paragraph.ama_image_separator.default
+targetEntityType: paragraph
+bundle: ama_image_separator
+mode: default
+content:
+  ama_image_separator:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: content
+hidden:
+  ama_classy_width: true

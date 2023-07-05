@@ -20,6 +20,33 @@ function ama_paragraphs_theme($existing, $type, $theme, $path) {
     ],
     'paragraph__ama_bp_card' => [
       'base hook' => 'paragraph',
-    ]
+    ],
+    'paragraph__ama_page_title' => [
+      'base hook' => 'paragraph',
+    ],
   ];
 }
+
+/**
+ * Implements hook_form_alter().
+ */
+/*function ama_paragraphs_form_alter(&$form,
+  \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  // Check if the form is the node edit form for the "article" content type.
+  if ($form_id === 'node_article_edit_form') {
+    // Hide the page title element.
+    $form['title']['#access'] = FALSE;
+  }
+}*/
+
+/**
+ * Implements hook_preprocess_paragraph().
+ */
+function ama_paragraphs_preprocess_paragraph(&$variables) {
+  $request = \Drupal::request();
+  $route_match = \Drupal::routeMatch();
+  $variables['title'] = \Drupal::service('title_resolver')->getTitle($request, $route_match->getRouteObject());
+}
+
+
+

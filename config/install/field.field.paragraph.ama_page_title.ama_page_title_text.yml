@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.ama_page_title_text
+    - paragraphs.paragraphs_type.ama_page_title
+id: paragraph.ama_page_title.ama_page_title_text
+field_name: ama_page_title_text
+entity_type: paragraph
+bundle: ama_page_title
+label: Title Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
