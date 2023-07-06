@@ -15,6 +15,7 @@ dependencies:
   - element_class_formatter
   - element_class_formatter_responsive_image
   - extra_image_field_classes
+  - default_paragraphs
   - field_formatter_class
   - field_group
   - fontawesome
