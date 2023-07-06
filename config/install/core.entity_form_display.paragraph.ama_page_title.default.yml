@@ -15,7 +15,7 @@ content:
     region: content
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'The Page Title will show in this component.'
     third_party_settings: {  }
 hidden:
   created: true

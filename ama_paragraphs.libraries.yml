@@ -1,7 +1,5 @@
 # Custom module library for general purposes.
 ama-paragraphs:
-  js:
-    js/ama-paragraphs.js: {}
   css:
     component:
       css/ama-paragraphs.css: {}

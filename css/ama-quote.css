@@ -1,55 +1,6 @@
-/*blockquote.paragraph--type--ama-quote::before {
-  margin-right: 0.2em;
-  color: #bbb;
-  font-size: 3em;
-  line-height: 0.85em;
-  content: "\201C";
-  vertical-align: top;
+.ama-quote {
+  padding: 15px 0px 15px 0px;
 }
-
-blockquote.paragraph--type--ama-quote > :first-child {
-  display: inline-block;
-}
-
-blockquote.paragraph--type--ama-quote > cite {
-  display: block;
-}*/
-
-/*blockquote{
-  font-size: 1.4em;
-  width:60%;
-  margin:50px auto;
-  font-family:Open Sans;
-  font-style:italic;
-  color: #555555;
-  padding:1.2em 30px 1.2em 75px;
-  border-left:8px solid #78C0A8 ;
-  line-height:1.6;
-  position: relative;
-  background:#EDEDED;
-}
-
-blockquote::before{
-  font-family:Arial;
-  content: "\201C";
-  color:#78C0A8;
-  font-size:4em;
-  position: absolute;
-  left: 10px;
-  top:-10px;
-}
-
-blockquote::after{
-  content: '';
-}
-
-blockquote cite{
-  display:block;
-  color:#333333;
-  font-style: normal;
-  font-weight: bold;
-  margin-top:1em;
-}*/
 
 .blockquote-custom {
   position: relative;
@@ -67,4 +18,5 @@ blockquote cite{
   top: -25px;
   left: 50px;
 }
+
 

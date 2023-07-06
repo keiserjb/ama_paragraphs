@@ -17,6 +17,8 @@ default_value_callback: ''
 settings:
   handler: 'default:classy_paragraphs_style'
   handler_settings:
-    target_bundles: null
+    target_bundles:
+      ama_container_width: ama_container_width
+      ama_full_width: ama_full_width
     auto_create: false
 field_type: entity_reference

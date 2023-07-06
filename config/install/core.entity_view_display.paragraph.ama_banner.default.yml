@@ -7,11 +7,13 @@ dependencies:
     - field.field.paragraph.ama_banner.ama_banner_link
     - field.field.paragraph.ama_banner.ama_banner_title
     - field.field.paragraph.ama_banner.ama_classy_width
+    - image.style.banner_1300_x_376_
     - paragraphs.paragraphs_type.ama_banner
   module:
+    - bg_image_formatter
+    - field_formatter_class
     - field_group
     - heading
-    - image
     - link
 third_party_settings:
   field_group:
@@ -19,9 +21,6 @@ third_party_settings:
       children:
         - ama_banner_image
         - group_data
-        - ama_banner_title
-        - ama_banner_description
-        - ama_banner_link
       label: Container
       parent_name: ''
       region: content
@@ -39,7 +38,10 @@ third_party_settings:
         effect: none
         speed: fast
     group_data:
-      children: {  }
+      children:
+        - ama_banner_title
+        - ama_banner_description
+        - ama_banner_link
       label: Data
       parent_name: group_container
       region: content
@@ -65,18 +67,33 @@ content:
     type: basic_string
     label: hidden
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: summary
     weight: 3
     region: content
   ama_banner_image:
-    type: image
+    type: bg_image_formatter
     label: hidden
     settings:
-      image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
-    third_party_settings: {  }
+      image_style: banner_1300_x_376_
+      css_settings:
+        bg_image_selector: .background
+        bg_image_z_index: auto
+        bg_image_color: '#FFFFFF'
+        bg_image_x: left
+        bg_image_y: top
+        bg_image_attachment: scroll
+        bg_image_repeat: no-repeat
+        bg_image_background_size: cover
+        bg_image_media_query: all
+        bg_image_important: 1
+        bg_image_background_size_ie8: 0
+        bg_image_path_format: absolute
+        bg_image_gradient: ''
+    third_party_settings:
+      field_formatter_class:
+        class: 'background img-to-bg'
     weight: 0
     region: content
   ama_banner_link:
@@ -86,16 +103,20 @@ content:
       trim_length: 80
       url_only: false
       url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: learn-more
     weight: 4
     region: content
   ama_banner_title:
     type: heading
     label: hidden
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: title
     weight: 2
     region: content
   field_banner_description:

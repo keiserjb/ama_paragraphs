@@ -20,8 +20,9 @@ settings:
     filter:
       type: target_bundles
       target_bundles:
-        full_width: full_width
-        normal_width: normal_width
+        target_bundles:
+          ama_container_width: ama_container_width
+          ama_full_width: ama_full_width
       negate: 0
     sort:
       field: _none

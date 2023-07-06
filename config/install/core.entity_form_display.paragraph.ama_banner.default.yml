@@ -49,14 +49,10 @@ content:
     settings: {  }
     third_party_settings: {  }
   ama_classy_width:
-    type: entity_reference_autocomplete
+    type: options_select
     weight: 4
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_banner_description:
     type: string_textarea
