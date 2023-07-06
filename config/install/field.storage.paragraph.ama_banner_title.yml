@@ -2,14 +2,15 @@ langcode: en
 status: true
 dependencies:
   module:
-    - heading
     - paragraphs
+    - text
 id: paragraph.ama_banner_title
 field_name: ama_banner_title
 entity_type: paragraph
-type: heading
-settings: {  }
-module: heading
+type: text
+settings:
+  max_length: 255
+module: text
 locked: false
 cardinality: 1
 translatable: true

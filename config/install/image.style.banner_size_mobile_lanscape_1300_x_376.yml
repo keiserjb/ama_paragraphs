@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: banner_size_mobile_lanscape_1300_x_376
+label: 'Banner size mobile lanscape (1300 x 376)'
+effects:
+  ae04d7e3-cdf1-4cf6-9909-325209ac385a:
+    uuid: ae04d7e3-cdf1-4cf6-9909-325209ac385a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 174
+      anchor: center-center

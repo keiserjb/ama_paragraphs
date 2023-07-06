@@ -10,9 +10,9 @@ dependencies:
     - image.style.thumbnail
     - paragraphs.paragraphs_type.ama_banner
   module:
-    - heading
     - image
     - link
+    - text
 id: paragraph.ama_banner.default
 targetEntityType: paragraph
 bundle: ama_banner
@@ -43,11 +43,13 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
   ama_banner_title:
-    type: heading
-    weight: 1
+    type: text_textfield
+    weight: 2
     region: content
-    settings: {  }
-    third_party_settings: {  }
+    settings:
+    size: 60
+    placeholder: ''
+    third_party_settings: { }
   ama_classy_width:
     type: options_select
     weight: 4

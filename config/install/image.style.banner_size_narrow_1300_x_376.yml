@@ -1,0 +1,15 @@
+
+langcode: en
+status: true
+dependencies: {  }
+name: banner_size_narrow_1300_x_376
+label: 'Banner size narrow (1300 x 376)'
+effects:
+  f80959ed-f997-4074-89e3-f0498a8d61de:
+    uuid: f80959ed-f997-4074-89e3-f0498a8d61de
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 231
+      anchor: center-center

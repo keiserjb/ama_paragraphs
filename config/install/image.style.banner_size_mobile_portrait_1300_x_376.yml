@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: banner_size_mobile_portrait_1300_x_376
+label: 'Banner size mobile portrait (1300 x 376)'
+effects:
+  db67365a-8820-41d9-9579-08830a481d37:
+    uuid: db67365a-8820-41d9-9579-08830a481d37
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 450
+      height: 130
+      anchor: center-center

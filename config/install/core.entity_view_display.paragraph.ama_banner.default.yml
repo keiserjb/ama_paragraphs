@@ -14,6 +14,7 @@ dependencies:
     - field_formatter_class
     - field_group
     - heading
+    - html_formatter
     - link
 third_party_settings:
   field_group:
@@ -111,13 +112,16 @@ content:
     weight: 4
     region: content
   ama_banner_title:
-    type: heading
+    type: html_field_formatter
     label: hidden
-    settings: {  }
+    settings:
+      tag: h2
+      class: ''
+      link: false
     third_party_settings:
       field_formatter_class:
         class: title
-    weight: 2
+    weight: 3
     region: content
   field_banner_description:
     type: basic_string
