@@ -10,8 +10,14 @@ use Drupal\Core\Routing\RouteMatchInterface;
 /**
  * Implements hook_theme().
  */
-function ama_paragraphs_theme($existing, $type, $theme, $path) {
+function ama_paragraphs_theme() {
   return [
+    'paragraph__ama_separator' => array(
+      'base hook' => 'paragraph',
+    ),
+    'paragraph__ama_quote' => array(
+      'base hook' => 'paragraph',
+    ),
     'paragraph__default' => [
       'base hook' => 'paragraph',
     ],
@@ -22,9 +28,6 @@ function ama_paragraphs_theme($existing, $type, $theme, $path) {
       'base hook' => 'paragraph',
     ],
     'paragraph__ama_page_title' => [
-      'base hook' => 'paragraph',
-    ],
-    'paragraph__ama_quote'               => [
       'base hook' => 'paragraph',
     ],
     'field__ama_quote_text'   => [

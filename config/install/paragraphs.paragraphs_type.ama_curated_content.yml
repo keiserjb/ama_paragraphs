@@ -4,5 +4,5 @@ dependencies: {  }
 id: ama_curated_content
 label: 'Curated Content'
 icon_uuid: null
-description: null
+description: 'Create a list of hand curated content.'
 behavior_plugins: {  }

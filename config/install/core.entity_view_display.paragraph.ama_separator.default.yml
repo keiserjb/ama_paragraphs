@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.ama_separator
+id: paragraph.separator.default
+targetEntityType: paragraph
+bundle: ama_separator
+mode: default
+content: {  }
+hidden: {  }

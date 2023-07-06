@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.ama_heading
+    - paragraphs.paragraphs_type.ama_cta
+id: paragraph.ama_cta.ama_heading
+field_name: ama_heading
+entity_type: paragraph
+bundle: ama_cta
+label: Heading
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

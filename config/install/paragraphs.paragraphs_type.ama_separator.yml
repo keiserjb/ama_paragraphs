@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: { }
+id: ama_separator
+label: Separator
+description: 'Use <em>Separator</em> to add a separator between paragraphs.'

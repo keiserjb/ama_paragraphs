@@ -1,0 +1,44 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ama_cta.ama_cta_description
+    - field.field.paragraph.ama_cta.ama_cta_link
+    - field.field.paragraph.ama_cta.ama_heading
+    - paragraphs.paragraphs_type.ama_cta
+  module:
+    - link
+    - text
+id: paragraph.ama_cta.default
+targetEntityType: paragraph
+bundle: ama_cta
+mode: default
+content:
+  ama_cta_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  ama_cta_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  ama_heading:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

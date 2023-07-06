@@ -18,9 +18,11 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      article:article
+      article: article
     sort:
       field: _none
+      direction: ASC
     auto_create: false
     auto_create_bundle: page
 field_type: entity_reference
+

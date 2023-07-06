@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ama_cta
+label: 'Call to Action'
+icon_uuid: null
+description: 'Create a Call to Action.'
+behavior_plugins: {  }
