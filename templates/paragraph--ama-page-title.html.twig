@@ -41,13 +41,13 @@
 {%
 set classes = [
 'paragraph',
-'paragraph--title',
+'paragraph--type--ama-page-title',
 'page__title'
 ]
 %}
 {% block paragraph %}
     <div{{ attributes.addClass(classes) }}>
-        <h1>{{ title }}</h1>
+        <h1 class="title">{{ title }}</h1>
     </div>
 {% endblock paragraph %}
 

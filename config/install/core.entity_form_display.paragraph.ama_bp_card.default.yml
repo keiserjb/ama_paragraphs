@@ -7,11 +7,12 @@ dependencies:
     - field.field.paragraph.ama_bp_card.ama_bp_card_link
     - field.field.paragraph.ama_bp_card.ama_bp_card_text
     - field.field.paragraph.ama_bp_card.ama_bp_card_title
-    - image.style.thumbnail
     - paragraphs.paragraphs_type.ama_bp_card
   module:
-    - image
     - link
+    - media_library
+_core:
+  default_config_hash: qyrdeN8BO2GwBp1d1yem97b9e1qX6sgGYS0TiJh0_SI
 id: paragraph.ama_bp_card.default
 targetEntityType: paragraph
 bundle: ama_bp_card
@@ -24,14 +25,6 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  ama_bp_card_image:
-    type: image_image
-    weight: 3
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
     third_party_settings: {  }
   ama_bp_card_link:
     type: link_default
@@ -56,6 +49,13 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  ama_bp_card_image:
+    type: media_library_widget
+    weight: 6
+    region: content
+    settings:
+      media_types: {  }
     third_party_settings: {  }
 hidden:
   created: true

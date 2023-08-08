@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.ama_quote_author
+    - paragraphs.paragraphs_type.ama_quote
+id: paragraph.quote.ama_quote_author
+field_name: ama_quote_author
+entity_type: paragraph
+bundle: ama_quote
+label: Author
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -6,18 +6,20 @@ dependencies:
     - field.field.paragraph.ama_audio.ama_audio_title
     - paragraphs.paragraphs_type.ama_audio
   module:
-    - file
+    - media_library
+_core:
+  default_config_hash: zUq-mZx_SVoUSTbAOt20upC7JR239AEHAbgTCD8FMJM
 id: paragraph.ama_audio.default
 targetEntityType: paragraph
 bundle: ama_audio
 mode: default
 content:
   ama_audio_file:
-    type: file_generic
+    type: media_library_widget
     weight: 1
     region: content
     settings:
-      progress_indicator: throbber
+      media_types: {  }
     third_party_settings: {  }
   ama_audio_title:
     type: string_textfield
@@ -26,13 +28,6 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  field_audio_file:
-    type: file_generic
-    weight: 1
-    region: content
-    settings:
-      progress_indicator: throbber
     third_party_settings: {  }
   field_audio_title:
     type: string_textfield

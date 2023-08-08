@@ -40,12 +40,12 @@
  */
 #}
 {% block paragraph %}
-  {{ attach_library('ama_paragraphs/ama-quote') }}
+  {{ attach_library('ama_quote/ama-quote') }}
   {# @todo - here we add more simpler bundle class so paragraph CSS selector
      are shorter. Not sure is it a good idea, should we remove it or do we do it
      in base template? #}
   {% do attributes.addClass(paragraph.bundle|clean_class) %}
-<div class="row ama-quote">
+<div class="row">
   <div class="col-lg-6 mx-auto">
   <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded"{{ attributes.addClass(classes) }}>
     <div class="blockquote-custom-icon bg-primary shadow-sm"><i class="fa fa-quote-left text-white"></i></div>

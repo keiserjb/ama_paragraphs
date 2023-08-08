@@ -2,19 +2,19 @@ langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.browse_files_modal
     - field.field.paragraph.ama_banner.ama_banner_description
     - field.field.paragraph.ama_banner.ama_banner_image
     - field.field.paragraph.ama_banner.ama_banner_link
     - field.field.paragraph.ama_banner.ama_banner_title
-    - field.field.paragraph.ama_banner.ama_classy_width
+    - image.style.thumbnail
     - paragraphs.paragraphs_type.ama_banner
   module:
-    - entity_browser
+    - image
     - link
-    - text
+    - media_library
+    - media_library_edit
 _core:
-  default_config_hash: UK_xIBzgpUAEWmzALygPSHtgEzt6Mi1Z5T9HklMOn9M
+  default_config_hash: aZ6QM8Dli0RssONA4FSPGw6NdKSol6EpGaZQrMjUy_Y
 id: paragraph.ama_banner.default
 targetEntityType: paragraph
 bundle: ama_banner
@@ -22,29 +22,24 @@ mode: default
 content:
   ama_banner_description:
     type: string_textarea
-    weight: 2
+    weight: 1
     region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
   ama_banner_image:
-    type: entity_browser_file
-    weight: 0
+    type: media_library_widget
+    weight: 4
     region: content
     settings:
-      entity_browser: browse_files_modal
-      field_widget_edit: true
-      field_widget_remove: true
-      field_widget_replace: true
-      open: true
-      selection_mode: selection_append
-      view_mode: default
-      preview_image_style: thumbnail
-    third_party_settings: {  }
+      media_types: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
   ama_banner_link:
     type: link_default
-    weight: 3
+    weight: 2
     region: content
     settings:
       placeholder_url: ''
@@ -52,17 +47,11 @@ content:
     third_party_settings: {  }
   ama_banner_title:
     type: string_textfield
-    weight: 1
+    weight: 0
     region: content
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  ama_classy_width:
-    type: options_select
-    weight: 4
-    region: content
-    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true

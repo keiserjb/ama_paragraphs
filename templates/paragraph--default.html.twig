@@ -82,6 +82,6 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     {% if content.ama_bp_accordion_header|render %}
       <h2>{{ content.ama_bp_header }}</h2>
     {% endif %}
-    {{ content|without('ama_bp_background', 'ama_bp_accordion_header') }}
+    {{ content|without('ama_bp_accordion_header') }}
   </div>
 </div>

@@ -1,3 +1,4 @@
+uuid: 5275ea11-21ec-40e2-88c2-6e86791ac779
 langcode: en
 status: true
 dependencies:
@@ -6,17 +7,20 @@ dependencies:
     - paragraphs.paragraphs_type.ama_file_upload
   module:
     - file
+    - media_library
+_core:
+  default_config_hash: '-Kmi7Xi1vFJslvrZKamzoReNwy8C5OIbhzJ0GHLtj-M'
 id: paragraph.ama_file_upload.default
 targetEntityType: paragraph
 bundle: ama_file_upload
 mode: default
 content:
   ama_file_upload:
-    type: file_generic
-    weight: 0
+    type: media_library_widget
+    weight: 1
     region: content
     settings:
-      progress_indicator: throbber
+      media_types: {  }
     third_party_settings: {  }
 hidden:
   created: true

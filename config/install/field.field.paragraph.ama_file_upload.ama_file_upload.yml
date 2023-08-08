@@ -3,9 +3,14 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.ama_file_upload
+    - media.type.document
     - paragraphs.paragraphs_type.ama_file_upload
   module:
-    - file
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    edit_disable: none
 id: paragraph.ama_file_upload.ama_file_upload
 field_name: ama_file_upload
 entity_type: paragraph
@@ -17,10 +22,13 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:file'
-  handler_settings: {  }
-  file_directory: ''
-  file_extensions: 'txt pdf zip'
-  max_filesize: ''
-  description_field: true
-field_type: file
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

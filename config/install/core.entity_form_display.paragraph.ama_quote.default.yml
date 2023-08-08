@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ama_quote.ama_quote_text
+    - field.field.paragraph.ama_quote.ama_quote_author
+    - paragraphs.paragraphs_type.ama_quote
+  module:
+    - text
+id: paragraph.ama_quote.default
+targetEntityType: paragraph
+bundle: ama_quote
+mode: default
+content:
+  ama_quote_text:
+    weight: 0
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  ama_quote_author:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+hidden:
+  created: true
+  status: true
+  uid: true

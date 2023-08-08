@@ -22,30 +22,14 @@ ama-bp-card:
 ama-quote:
   css:
     component:
-      css/ama-quote.css: {}
-# Third-party library (self hosted).
-jquery-labelauty:
-  remote: https://github.com/fntneves/jquery-labelauty
-  version: 1.1.0
-  license:
-    name: MIT
-    url: https://github.com/fntneves/jquery-labelauty/blob/v1.1.0/LICENSE
-    gpl-compatible: true
-  js:
-    /libraries/jquery-labelauty/source/jquery-labelauty.js: {}
+      css/ama-quote.css: { preprocess: false, minified: false }
+ama-photos:
   css:
     component:
-      /libraries/jquery-labelauty/source/jquery-labelauty.css: {}
+      css/ama-photos.css: { preprocess: false, minified: false }
+  js:
+    js/ama-photos.js {}
   dependencies:
     - core/jquery
-
-# Third-party library (CDN).
-vuejs:
-  remote: https://vuejs.org
-  version: 2.0.5
-  license:
-    name: MIT
-    url: https://github.com/vuejs/vue/blob/dev/LICENSE
-    gpl-compatible: true
-  js:
-    https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js: {type: external, minified: true}
+    - core/drupal
+    - core/bootstrap.modal

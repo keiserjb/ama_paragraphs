@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: ama_quote
+label: Quote
+description: 'Use <em>Quote</em> to add a quote with its author.'

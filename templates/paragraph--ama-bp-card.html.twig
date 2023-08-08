@@ -56,20 +56,20 @@
 
 
 <div{{ attributes.addClass(classes).addClass(paragraph_class) }}>
-
   {{ content.ama_bp_card_image }}
 
   <div class="card-body d-flex flex-column">
-
     <h4 class="card-title">{{ content.ama_bp_card_title }}</h4>
-
     <p class="card-text">{{ content.ama_bp_card_text }}</p>
 
-    {{ content|without('ama_bp_card_image', 'ama_bp_card_link', 'ama_bp_card_style', 'ama_bp_card_text',
-      'ama_bp_card_title') }}
-    <div class="mt-auto d-grid gap-2">  
-    <a class="btn btn-lg btn-success" href="{{ content.ama_bp_card_link[0]['#url'] }}">{{ content.ama_bp_card_button_text }}</a>  
+    {% set button_text = content.ama_bp_card_button_text %}
+    {{ content|without('ama_bp_card_image', 'ama_bp_card_link', 'ama_bp_card_style', 'ama_bp_card_text', 'ama_bp_card_title', 'ama_bp_card_button_text') }}
+
+    <div class="mt-auto d-grid gap-2">
+      {% if content.ama_bp_card_link %}
+        <a class="btn btn-lg btn-success" href="{{ content.ama_bp_card_link[0]['#url'] }}">{{ button_text }}</a>
+      {% endif %}
     </div>
   </div>
-  
 </div>
+  

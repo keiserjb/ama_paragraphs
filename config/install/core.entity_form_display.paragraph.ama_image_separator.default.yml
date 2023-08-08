@@ -4,10 +4,11 @@ dependencies:
   config:
     - field.field.paragraph.ama_image_separator.ama_classy_width
     - field.field.paragraph.ama_image_separator.ama_image_separator
-    - image.style.thumbnail
     - paragraphs.paragraphs_type.ama_image_separator
   module:
-    - image
+    - media_library
+_core:
+  default_config_hash: UEacR3LXcdRQszty86Laqgpj0tAnXS_8fQU7yw9egPE
 id: paragraph.ama_image_separator.default
 targetEntityType: paragraph
 bundle: ama_image_separator
@@ -17,16 +18,16 @@ content:
     type: options_select
     weight: 4
     region: content
-    settings: { }
-    third_party_settings: { }
+    settings: {  }
+    third_party_settings: {  }
   ama_image_separator:
-    type: image_image
-    weight: 0
+    type: media_library_widget
+    weight: 6
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
 hidden:
+  ama_image_separator: true
   created: true
   status: true
