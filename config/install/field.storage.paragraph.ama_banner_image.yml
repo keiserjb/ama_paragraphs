@@ -1,10 +1,12 @@
-
+uuid: f81058c5-5b78-4d17-812c-8867a5e0f7d8
 langcode: en
 status: true
 dependencies:
   module:
     - media
     - paragraphs
+_core:
+  default_config_hash: hi2SZbUAQGxK8_hONruHGpMqlyJlhFRIrm8BzcpqBfs
 id: paragraph.ama_banner_image
 field_name: ama_banner_image
 entity_type: paragraph

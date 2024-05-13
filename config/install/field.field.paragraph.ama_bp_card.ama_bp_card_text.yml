@@ -1,9 +1,12 @@
+uuid: cfc5c5bd-d508-429f-8983-4d3ca4d1ac07
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.ama_bp_card_text
     - paragraphs.paragraphs_type.ama_bp_card
+_core:
+  default_config_hash: ASvfCp2vGCrWfJzPLhD2Zlr-84FH4ygpxdIKNXlDShM
 id: paragraph.ama_bp_card.ama_bp_card_text
 field_name: ama_bp_card_text
 entity_type: paragraph

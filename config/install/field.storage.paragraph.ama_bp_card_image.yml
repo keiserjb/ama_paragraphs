@@ -1,9 +1,12 @@
+uuid: c603a6e0-05a1-4bb5-8313-1e33dd1d3b0e
 langcode: en
 status: true
 dependencies:
   module:
     - media
     - paragraphs
+_core:
+  default_config_hash: t1zJdzb1ZXnk7ZULNBcbFPLxo_QoPXxq0JlOEAYo-IY
 id: paragraph.ama_bp_card_image
 field_name: ama_bp_card_image
 entity_type: paragraph

@@ -1,3 +1,4 @@
+uuid: 3af6b666-622b-4e70-99b9-e337e5e0ac37
 langcode: en
 status: true
 dependencies:
@@ -6,15 +7,13 @@ dependencies:
     - field.field.paragraph.ama_banner.ama_banner_image
     - field.field.paragraph.ama_banner.ama_banner_link
     - field.field.paragraph.ama_banner.ama_banner_title
-    - image.style.thumbnail
+    - field.field.paragraph.ama_banner.ama_classy_width
     - paragraphs.paragraphs_type.ama_banner
   module:
-    - image
-    - link
     - media_library
     - media_library_edit
 _core:
-  default_config_hash: aZ6QM8Dli0RssONA4FSPGw6NdKSol6EpGaZQrMjUy_Y
+  default_config_hash: oa1NkhuYRSZLrUMAgUvYsW3_u342pgrL0tY1SwnsIpc
 id: paragraph.ama_banner.default
 targetEntityType: paragraph
 bundle: ama_banner
@@ -30,21 +29,13 @@ content:
     third_party_settings: {  }
   ama_banner_image:
     type: media_library_widget
-    weight: 4
+    weight: 2
     region: content
     settings:
       media_types: {  }
     third_party_settings:
       media_library_edit:
         show_edit: '1'
-  ama_banner_link:
-    type: link_default
-    weight: 2
-    region: content
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
   ama_banner_title:
     type: string_textfield
     weight: 0
@@ -54,5 +45,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
 hidden:
+  ama_banner_link: true
+  ama_classy_width: true
   created: true
   status: true

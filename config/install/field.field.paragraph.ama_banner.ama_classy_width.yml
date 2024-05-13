@@ -1,9 +1,12 @@
+uuid: c5bd3745-1f03-4b0d-8795-3fd80d3550a3
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.ama_classy_width
     - paragraphs.paragraphs_type.ama_banner
+_core:
+  default_config_hash: b-7hKC0JmeMRcNW_IGp3c0FbCM7DPzBigXF9tAnQP70
 id: paragraph.ama_banner.ama_classy_width
 field_name: ama_classy_width
 entity_type: paragraph
@@ -20,9 +23,8 @@ settings:
     filter:
       type: target_bundles
       target_bundles:
-        target_bundles:
-          ama_container_width: ama_container_width
-          ama_full_width: ama_full_width
+        ama_container_width: ama_container_width
+        ama_full_width: ama_full_width
       negate: 0
     sort:
       field: _none

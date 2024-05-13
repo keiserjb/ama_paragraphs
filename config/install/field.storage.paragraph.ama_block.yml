@@ -1,9 +1,12 @@
+uuid: 7f251682-3f7d-4eaa-9f97-577ec42de7f8
 langcode: en
 status: true
 dependencies:
   module:
     - block_field
     - paragraphs
+_core:
+  default_config_hash: IZ3P8IXNQjKLLIGMaeX8cdE2hl3kCKHJJ6EYPNx0OB4
 id: paragraph.ama_block
 field_name: ama_block
 entity_type: paragraph

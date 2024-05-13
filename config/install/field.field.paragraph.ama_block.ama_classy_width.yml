@@ -1,0 +1,41 @@
+uuid: f2a24a78-b703-4d76-8d46-ba08c216a9d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.ama_classy_width
+    - paragraphs.paragraphs_type.ama_block
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    edit_disable: none
+id: paragraph.ama_block.ama_classy_width
+field_name: ama_classy_width
+entity_type: paragraph
+bundle: ama_block
+label: 'Classy Width'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: classy_paragraphs
+  handler_settings:
+    filter:
+      type: target_bundles
+      target_bundles:
+        ama_container_width: ama_container_width
+        ama_full_width: ama_full_width
+        blue_background: 0
+        brown_background: 0
+        content_center: 0
+        content_left: 0
+        content_right: 0
+        white_background: 0
+      negate: 0
+    sort:
+      field: _none
+field_type: entity_reference

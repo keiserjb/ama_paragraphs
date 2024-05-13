@@ -1,9 +1,17 @@
+uuid: 878e1746-db33-4c3f-860a-b0f100465a9a
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - layout_paragraphs
+_core:
+  default_config_hash: IiOa--gYTxkSM2A-DymN0yD99xjq8a0lP1Jb6JUvZy4
 id: ama_file_upload
 label: 'File Upload'
 icon_uuid: null
 icon_default: null
 description: 'Upload a file like a pdf, txt, or zip.'
-behavior_plugins: {  }
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

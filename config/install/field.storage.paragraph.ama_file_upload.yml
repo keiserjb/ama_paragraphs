@@ -1,9 +1,12 @@
+uuid: 19e64f8a-9b32-4ec1-91d0-0a03cd53c6d6
 langcode: en
 status: true
 dependencies:
   module:
     - media
     - paragraphs
+_core:
+  default_config_hash: R3CXj3fnT2kxDas-4ugSJbt_x0Ys8Ls0N8sqnmIIxCM
 id: paragraph.ama_file_upload
 field_name: ama_file_upload
 entity_type: paragraph

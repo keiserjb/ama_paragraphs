@@ -1,3 +1,4 @@
+uuid: 1b4bafee-127c-45c8-8872-ed83cc4db823
 langcode: en
 status: true
 dependencies:
@@ -9,6 +10,8 @@ dependencies:
     - field_formatter_class
     - heading
     - text
+_core:
+  default_config_hash: cKIf9ceWJBDymKuKRjXffpQcZ4IbUwjkwym7z7K-Af8
 id: paragraph.ama_accordion_item.default
 targetEntityType: paragraph
 bundle: ama_accordion_item

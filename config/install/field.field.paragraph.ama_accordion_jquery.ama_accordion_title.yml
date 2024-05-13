@@ -1,9 +1,12 @@
+uuid: 3db7fd0f-8123-4869-8274-2a35e736cfc2
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.ama_accordion_title
     - paragraphs.paragraphs_type.ama_accordion_jquery
+_core:
+  default_config_hash: j_lhgyYtdvkDNYzn1NFIvhB3WYJ3kG1l8xND6n8TYnM
 id: paragraph.ama_accordion_jquery.ama_accordion_title
 field_name: ama_accordion_title
 entity_type: paragraph

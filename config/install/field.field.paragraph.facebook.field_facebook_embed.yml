@@ -1,0 +1,35 @@
+uuid: f29e8679-7ee3-49ac-b687-e36a2cee2ab5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_facebook_embed
+    - media.type.facebook
+    - paragraphs.paragraphs_type.facebook
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    edit_disable: none
+id: paragraph.facebook.field_facebook_embed
+field_name: field_facebook_embed
+entity_type: paragraph
+bundle: facebook
+label: 'Facebook Embed'
+description: 'Embed a Facebook post or video.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      facebook: facebook
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

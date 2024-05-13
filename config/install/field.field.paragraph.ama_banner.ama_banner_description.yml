@@ -1,9 +1,12 @@
+uuid: 2675bef4-09c3-414b-b843-bb9b25ce4502
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.ama_banner_description
     - paragraphs.paragraphs_type.ama_banner
+_core:
+  default_config_hash: imeYpyL9ek3itzdFwFoo3lzo4cwi-50-1ikdyIMUHr8
 id: paragraph.ama_banner.ama_banner_description
 field_name: ama_banner_description
 entity_type: paragraph

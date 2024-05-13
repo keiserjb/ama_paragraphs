@@ -1,0 +1,7 @@
+uuid: acad0b30-9464-4c42-96fd-60818a7b124e
+langcode: en
+status: true
+dependencies: {  }
+id: ama_content_right
+label: 'Content Right'
+classes: content-right

@@ -1,0 +1,29 @@
+uuid: b3e70ebe-f69d-4205-b9e5-6510a34d0173
+langcode: en
+status: true
+dependencies:
+  config:
+    - oembed_providers.bucket.orv
+  module:
+    - crop
+    - oembed_providers
+third_party_settings:
+  crop:
+    image_field: null
+id: other_remote_video
+label: 'Other Remote Video'
+description: 'Add video from Facebook, Vimeo, or YouTube.'
+source: 'oembed:orv'
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_oembed_orv
+  thumbnails_directory: 's3://oembed_thumbnails/[date:custom:Y-m]'
+  providers: {  }
+field_map:
+  type: field_resource_type
+  title: name
+  author_name: field_video_credit
+  author_url: field_media_oembed_orv
+  provider_name: field_provider_name
+  provider_url: field_provider_url

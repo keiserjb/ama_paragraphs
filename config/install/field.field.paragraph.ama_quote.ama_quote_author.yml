@@ -1,10 +1,13 @@
+uuid: 9b489c60-69ee-4232-b839-d977a104e5d7
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.ama_quote_author
     - paragraphs.paragraphs_type.ama_quote
-id: paragraph.quote.ama_quote_author
+_core:
+  default_config_hash: p7qmkbiaLqDaHRgKNtixfqH_yGDDz5e6UlQhhbe_WhI
+id: paragraph.ama_quote.ama_quote_author
 field_name: ama_quote_author
 entity_type: paragraph
 bundle: ama_quote

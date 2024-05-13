@@ -46,6 +46,9 @@ function ama_paragraphs_theme() {
     'field__ama_photo' => [
       'base hook' => 'field',
     ],
+    'field__ama_bp_card_image' => [
+      'base hook' => 'field',
+    ],
   ];
 }
 

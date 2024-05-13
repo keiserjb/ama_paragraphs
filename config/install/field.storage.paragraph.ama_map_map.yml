@@ -1,8 +1,11 @@
+uuid: fffc96c7-2a23-443c-9603-a1049abee356
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
+_core:
+  default_config_hash: XmEQWjoXp6ha_WlxBMIl_vPthZUYWlwqtCWyxqBwydg
 id: paragraph.ama_map_map
 field_name: ama_map_map
 entity_type: paragraph

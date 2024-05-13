@@ -1,8 +1,11 @@
+uuid: 64e54cad-6229-4e44-9c7a-a8fdbdeb02f5
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
+_core:
+  default_config_hash: IY05dfr3GZ7q4K5I_Ic84PsMyH8yLWg91Km5nJr8r5M
 id: paragraph.ama_bp_show_button
 field_name: ama_bp_show_button
 entity_type: paragraph

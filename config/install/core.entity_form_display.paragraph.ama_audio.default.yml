@@ -1,26 +1,22 @@
+uuid: 15510a0b-02d4-40ba-9499-d853fa2a57c7
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.paragraph.ama_audio.ama_audio_file
     - field.field.paragraph.ama_audio.ama_audio_title
+    - field.field.paragraph.ama_audio.ama_media_audio
     - paragraphs.paragraphs_type.ama_audio
   module:
     - media_library
+    - media_library_edit
 _core:
-  default_config_hash: zUq-mZx_SVoUSTbAOt20upC7JR239AEHAbgTCD8FMJM
+  default_config_hash: j9RlZ_Xxv694Ovy-LA4ywLqvU42ev9X-VIRKcOlbSA8
 id: paragraph.ama_audio.default
 targetEntityType: paragraph
 bundle: ama_audio
 mode: default
 content:
-  ama_audio_file:
-    type: media_library_widget
-    weight: 1
-    region: content
-    settings:
-      media_types: {  }
-    third_party_settings: {  }
   ama_audio_title:
     type: string_textfield
     weight: 0
@@ -29,14 +25,16 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_audio_title:
-    type: string_textfield
-    weight: 0
+  ama_media_audio:
+    type: media_library_widget
+    weight: 1
     region: content
     settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
+      media_types: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
 hidden:
+  ama_audio_file: true
   created: true
   status: true

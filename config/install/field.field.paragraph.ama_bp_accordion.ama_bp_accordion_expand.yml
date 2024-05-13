@@ -1,14 +1,17 @@
+uuid: 5bc196e5-cf39-40a0-b9db-1431320f81df
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.ama_bp_accordion_expand
     - paragraphs.paragraphs_type.ama_bp_accordion
+_core:
+  default_config_hash: nfGklDx3MKL4xH33rbrATba7_BJJI8yqqIehFtV-rrs
 id: paragraph.ama_bp_accordion.ama_bp_accordion_expand
 field_name: ama_bp_accordion_expand
 entity_type: paragraph
 bundle: ama_bp_accordion
-label: Show Expand/Collapse All button
+label: 'Show Expand/Collapse All button'
 description: ''
 required: false
 translatable: false

@@ -1,6 +1,9 @@
+uuid: 1a7117de-9332-41fc-b56a-83632aed1a90
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: ZxZ6RklP6LEwUwabP-6eVHrPlnw09kazEY06WM2jA4Q
 id: ama_body
 label: Body
 icon_uuid: null

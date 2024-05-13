@@ -1,3 +1,4 @@
+uuid: 1e31745f-c049-49e1-8aeb-23db168afc51
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - field.storage.paragraph.ama_photo
     - media.type.image
     - paragraphs.paragraphs_type.ama_photos
+_core:
+  default_config_hash: HxH56Z_phYshEN4qj4-32GoOwekiTlseaUKRm68-u90
 id: paragraph.ama_photos.ama_photo
 field_name: ama_photo
 entity_type: paragraph

@@ -1,9 +1,17 @@
+uuid: 05169bbe-baad-417d-83f3-2470586a9b69
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - layout_paragraphs
+_core:
+  default_config_hash: 3FXX1KvD8HSr7ZelFiqkf0OplidP3Gw42DIGOuFOhm4
 id: ama_accordion_jquery
 label: Accordion
 icon_uuid: null
 icon_default: null
 description: 'Create an accordion.  Use Accordion Items inside Accordions.'
-behavior_plugins: {  }
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

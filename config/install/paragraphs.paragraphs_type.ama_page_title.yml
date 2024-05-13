@@ -1,6 +1,17 @@
+uuid: 179f8b52-8658-48bc-8e04-a6811414995b
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - layout_paragraphs
+_core:
+  default_config_hash: UJkm9qW7EU-IERNXoC8KZGZVCmb53kwhgTFI7r-ECMw
 id: ama_page_title
-label: Page Title
+label: 'Page Title'
+icon_uuid: null
+icon_default: null
 description: 'Use <em>Page Title</em> to add Page Title text.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

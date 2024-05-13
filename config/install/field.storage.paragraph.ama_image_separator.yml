@@ -1,9 +1,12 @@
+uuid: 2019f2b7-4dac-49dd-b56b-94f321367493
 langcode: en
 status: true
 dependencies:
   module:
     - media
     - paragraphs
+_core:
+  default_config_hash: vBxRzgmB-uZ0c7zhnyL85lCZELv_YY_phadNfBPyNns
 id: paragraph.ama_image_separator
 field_name: ama_image_separator
 entity_type: paragraph

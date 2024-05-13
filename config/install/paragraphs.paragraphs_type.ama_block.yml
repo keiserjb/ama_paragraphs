@@ -1,9 +1,11 @@
+uuid: 5b257bd0-6715-4357-91ae-fb47eff21b3e
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: 07Kg4wfEEEoRE0jNh3zu2-uxu-79kt4EzN1A8bmNXt8
 id: ama_block
 label: Block
 icon_uuid: null
 icon_default: null
 description: 'Embed other content blocks including views.'
-behavior_plugins: {  }

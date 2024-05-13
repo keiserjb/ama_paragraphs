@@ -1,9 +1,12 @@
+uuid: eaf8f4a0-fe19-4113-81da-1911bec9665d
 langcode: en
 status: true
 dependencies:
   module:
     - file
     - paragraphs
+_core:
+  default_config_hash: cPpWAl-y_xcppdE42eqZ_szc6ZTtLYcL3tK3kr-skDA
 id: paragraph.ama_audio_file
 field_name: ama_audio_file
 entity_type: paragraph

@@ -1,9 +1,12 @@
+uuid: beb58894-1d5c-47b3-baa1-42356f9c6054
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
     - text
+_core:
+  default_config_hash: 8J162fDDT3IsYXASZf2u7AHYhp1Usb85on8IN-e_2vI
 id: paragraph.ama_quote_text
 field_name: ama_quote_text
 entity_type: paragraph

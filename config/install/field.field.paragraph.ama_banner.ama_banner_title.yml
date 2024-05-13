@@ -1,18 +1,29 @@
+uuid: 24f1b859-fbe6-44b1-8650-c1e34f0dbe69
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.ama_banner_title
     - paragraphs.paragraphs_type.ama_banner
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: all
+    edit_disable: all
+_core:
+  default_config_hash: uXxBviLw-6OsZHAK0xTKq4zQzZN5R2sGXLKn6kFL_6U
 id: paragraph.ama_banner.ama_banner_title
 field_name: ama_banner_title
 entity_type: paragraph
 bundle: ama_banner
 label: 'Banner Title'
 description: ''
-required: false
+required: 0
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: 'Banner Title'
 default_value_callback: ''
 settings: {  }
 field_type: string

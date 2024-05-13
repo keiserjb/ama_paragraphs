@@ -1,3 +1,4 @@
+uuid: 2e7c7043-72ed-423e-8db5-2202c5c82e8f
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.ama_bp_accordion
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: ZrZE5HeIZOLN1MAGUKeHhfnL6dFuawzDYYRapCBiRxs
 id: paragraph.ama_bp_accordion.ama_bp_accordion_section
 field_name: ama_bp_accordion_section
 entity_type: paragraph

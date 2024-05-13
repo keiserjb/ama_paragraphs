@@ -1,16 +1,25 @@
+uuid: d7c88fb9-715e-437f-855c-0387cc06d2f0
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.ama_page_title_text
     - paragraphs.paragraphs_type.ama_page_title
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: all
+    edit_disable: all
+_core:
+  default_config_hash: oycaoJOYHAFoJtTOSY6S6B5rLV13MdogK0ljLo2VXlc
 id: paragraph.ama_page_title.ama_page_title_text
 field_name: ama_page_title_text
 entity_type: paragraph
 bundle: ama_page_title
-label: Title Text
+label: 'Title Text'
 description: ''
-required: false
+required: 0
 translatable: true
 default_value: {  }
 default_value_callback: ''

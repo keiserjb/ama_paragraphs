@@ -1,9 +1,17 @@
+uuid: f7077032-802f-426a-ad7e-2e1fb19ab931
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - layout_paragraphs
+_core:
+  default_config_hash: NLrxGmCeTzCrSCW39rlxrCX9-Bz006rJji-pjPhifv4
 id: ama_accordion_item
 label: 'Accordion Item'
 icon_uuid: null
 icon_default: null
 description: 'Parts of an accordion.'
-behavior_plugins: {  }
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

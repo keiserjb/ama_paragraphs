@@ -1,0 +1,51 @@
+uuid: 724078a4-657e-497c-925b-bc70ca8228a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.teaser
+    - field.field.paragraph.ama_body.ama_body
+    - paragraphs.paragraphs_type.ama_body
+  module:
+    - field_formatter_class
+    - field_label
+    - smart_trim
+_core:
+  default_config_hash: dTNHLzxUmkVs0v4Ma3rsG0C4k5iL0AZ3ZO-2_AZM5hc
+id: paragraph.ama_body.teaser
+targetEntityType: paragraph
+bundle: ama_body
+mode: teaser
+content:
+  ama_body:
+    type: smart_trim
+    label: hidden
+    settings:
+      trim_length: 150
+      trim_type: chars
+      trim_suffix: ''
+      wrap_output: false
+      wrap_class: trimmed
+      more:
+        display_link: false
+        target_blank: false
+        link_trim_only: false
+        class: more-link
+        text: More
+        aria_label: 'Read more about [node:title]'
+        token_browser: ''
+      summary_handler: full
+      trim_options:
+        text: true
+        trim_zero: true
+        replace_tokens: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      field_label:
+        label_class: ''
+        label_value: ''
+        label_tag: ''
+    weight: 0
+    region: content
+hidden: {  }

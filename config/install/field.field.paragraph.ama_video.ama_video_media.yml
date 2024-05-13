@@ -1,0 +1,35 @@
+uuid: e4b6fbb0-a214-454b-90d7-3c5d7a60828f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.ama_video_media
+    - media.type.other_remote_video
+    - paragraphs.paragraphs_type.ama_video
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    edit_disable: none
+id: paragraph.ama_video.ama_video_media
+field_name: ama_video_media
+entity_type: paragraph
+bundle: ama_video
+label: 'Video Media'
+description: 'For YouTube or Vimeo.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      other_remote_video: other_remote_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

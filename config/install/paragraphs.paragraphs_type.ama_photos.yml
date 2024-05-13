@@ -1,6 +1,9 @@
+uuid: bb0836a4-7b41-4528-a1c8-81ece5f6b02c
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: XSwgfoTYyq2lRCNfN-wwdwt_Gf91VQX6CRF1Q3GxLsk
 id: ama_photos
 label: Photos
 icon_uuid: null

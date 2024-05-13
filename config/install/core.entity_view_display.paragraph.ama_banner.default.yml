@@ -7,19 +7,17 @@ dependencies:
     - field.field.paragraph.ama_banner.ama_banner_image
     - field.field.paragraph.ama_banner.ama_banner_link
     - field.field.paragraph.ama_banner.ama_banner_title
-    - image.style.banner_1300_x_376_
+    - field.field.paragraph.ama_banner.ama_classy_width
     - paragraphs.paragraphs_type.ama_banner
   module:
-    - bg_image_formatter
     - field_formatter_class
     - field_group
-    - link
+    - field_label
 third_party_settings:
   field_group:
     group_container:
       children:
         - ama_banner_image
-        - field_banner_media
         - group_data
       label: Container
       parent_name: ''
@@ -41,11 +39,10 @@ third_party_settings:
       children:
         - ama_banner_title
         - ama_banner_description
-        - ama_banner_link
       label: Data
       parent_name: group_container
       region: content
-      weight: 2
+      weight: 4
       format_type: html_element
       format_settings:
         classes: data
@@ -59,7 +56,7 @@ third_party_settings:
         effect: none
         speed: fast
 _core:
-  default_config_hash: opKVJLjYpIy24Syt55uuL1Za7NiZRSvLp2z6hJGPDH4
+  default_config_hash: ZFz_Kja4M9U9yi9A_E2pKH0sbixTyXECr7mRLBdjB5g
 id: paragraph.ama_banner.default
 targetEntityType: paragraph
 bundle: ama_banner
@@ -83,21 +80,11 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
-    weight: 1
-    region: content
-  ama_banner_link:
-    type: link
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: '0'
-      target: '0'
-    third_party_settings:
-      field_formatter_class:
-        class: learn-more
-    weight: 5
+      field_label:
+        label_class: ''
+        label_value: ''
+        label_tag: ''
+    weight: 3
     region: content
   ama_banner_title:
     type: string
@@ -106,6 +93,9 @@ content:
       link_to_entity: false
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: title
     weight: 3
     region: content
+hidden:
+  ama_banner_link: true
+  ama_classy_width: true

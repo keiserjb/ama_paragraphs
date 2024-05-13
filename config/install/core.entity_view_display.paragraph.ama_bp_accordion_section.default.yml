@@ -1,3 +1,4 @@
+uuid: 8f2d254a-94f9-4f27-bee3-55e56caa4e74
 langcode: en
 status: true
 dependencies:
@@ -8,6 +9,8 @@ dependencies:
     - paragraphs.paragraphs_type.ama_bp_accordion_section
   module:
     - text
+_core:
+  default_config_hash: K2EkmUqW8I1HnmhHKTD4PULFvy-KTjnJUf7B0CnGnmo
 id: paragraph.ama_bp_accordion_section.default
 targetEntityType: paragraph
 bundle: ama_bp_accordion_section
@@ -29,10 +32,10 @@ content:
     weight: 1
     region: content
   ama_bp_show_button:
-    weight: 2
+    type: boolean
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: boolean
+    weight: 2
     region: content
 hidden: {  }

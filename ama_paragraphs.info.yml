@@ -7,27 +7,39 @@ dependencies:
   - drupal:file
   - drupal:image
   - drupal:link
+  - drupal:media
+  - drupal:media_library
   - drupal:entity_reference_revisions
   - audiofield
   - block_field
   - bg_image_formatter
   - classy_paragraphs
   - default_paragraphs
+  - disable_field
   - element_class_formatter
   - element_class_formatter_responsive_image
   - extra_image_field_classes
   - field_formatter_class
   - field_group
+  - field_label
+  - focal_point
   - fontawesome
   - heading
   - html_formatter
   - jquery_ui
   - jquery_ui_accordion
+  - layout_paragraphs
+  - linked_field
+  - media_entity_facebook
+  - media_library_edit
+  - oembed_providers
   - paragraphs_jquery_ui_accordion
   - paragraphs
   - responsive_image
   - responsive_bg_image_formatter
   - simple_gmap
+  - smart_trim
+  - text_summary_options
   - video_embed_facebook
   - video_embed_field
   - youtube

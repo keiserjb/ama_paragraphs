@@ -1,16 +1,19 @@
+uuid: a8e57c83-9d24-44d9-8a54-ee58b0af8744
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
+_core:
+  default_config_hash: dTE4saBJvSkmgBeuxnD23WUmdUlvDLp4kk9UDAj8YQc
 id: paragraph.ama_page_title_text
 field_name: ama_page_title_text
 entity_type: paragraph
 type: string
 settings:
   max_length: 255
-  is_ascii: false
   case_sensitive: false
+  is_ascii: false
 module: core
 locked: false
 cardinality: 1

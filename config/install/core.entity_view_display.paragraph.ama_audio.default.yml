@@ -1,31 +1,35 @@
+uuid: 12b1eed9-69db-4e79-bf8d-6e4d7fc4076e
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.paragraph.ama_audio.ama_audio_file
     - field.field.paragraph.ama_audio.ama_audio_title
+    - field.field.paragraph.ama_audio.ama_media_audio
     - paragraphs.paragraphs_type.ama_audio
   module:
-    - file
+    - field_formatter_class
+    - field_label
+    - heading
+_core:
+  default_config_hash: gnM6SHDr0q56CXX7ZrWxxPRk5-5WppSZ5rE4lWbGfPU
 id: paragraph.ama_audio.default
 targetEntityType: paragraph
 bundle: ama_audio
 mode: default
 content:
-  ama_audio_file:
-    type: file_default
-    label: hidden
-    settings:
-      use_description_as_link_text: true
-    third_party_settings: {  }
-    weight: 1
-    region: content
   ama_audio_title:
-    type: string
+    type: heading_text
     label: hidden
     settings:
-      link_to_entity: false
-    third_party_settings: {  }
+      size: h3
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      field_label:
+        label_class: ''
+        label_value: ''
+        label_tag: ''
     weight: 0
     region: content
   field_audio_file:
@@ -46,4 +50,14 @@ content:
         class: ''
     weight: 0
     region: content
-hidden: {  }
+  ama_media_audio:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  ama_audio_file: true

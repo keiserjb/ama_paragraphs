@@ -1,3 +1,4 @@
+uuid: 477d3244-37a6-43b7-8bac-ccfaae0f6d94
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.ama_cta
   module:
     - link
+_core:
+  default_config_hash: mmx2ijAqiIdbj5jZBM_46EVND1JGP4IfJdFn-Xc_ZJQ
 id: paragraph.ama_cta.ama_cta_link
 field_name: ama_cta_link
 entity_type: paragraph

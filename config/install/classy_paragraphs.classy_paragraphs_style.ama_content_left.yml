@@ -1,0 +1,7 @@
+uuid: 72c8c910-a5b1-470c-8f7f-f8f22389646c
+langcode: en
+status: true
+dependencies: {  }
+id: ama_content_left
+label: 'Content Left'
+classes: content-left

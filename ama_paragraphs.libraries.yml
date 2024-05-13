@@ -2,11 +2,7 @@
 ama-paragraphs:
   css:
     component:
-      css/ama-paragraphs.css: {}
-  dependencies:
-    - core/drupalSettings
-    - ama_paragraphs/jquery-labelauty
-    - core/jquery
+      css/ama-paragraphs.css: { preprocess: false, minified: false }
 ama-bp-accordion:
   css:
     component:
@@ -28,7 +24,7 @@ ama-photos:
     component:
       css/ama-photos.css: { preprocess: false, minified: false }
   js:
-    js/ama-photos.js {}
+    js/ama-photos.js: { preprocess: false }
   dependencies:
     - core/jquery
     - core/drupal

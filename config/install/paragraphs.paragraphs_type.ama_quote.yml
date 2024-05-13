@@ -1,8 +1,17 @@
+uuid: 1fcc30c4-3633-449c-bb59-06066250ae51
 langcode: en
 status: true
 dependencies:
   module:
-    - paragraphs
+    - layout_paragraphs
+_core:
+  default_config_hash: eVlFfzJ0iRy0dK06w6mFjJ4QztGJqzZfKKwFHKXxTKU
 id: ama_quote
 label: Quote
+icon_uuid: null
+icon_default: null
 description: 'Use <em>Quote</em> to add a quote with its author.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

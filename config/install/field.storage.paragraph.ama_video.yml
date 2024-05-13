@@ -1,9 +1,12 @@
+uuid: 7b35bb64-b3a3-4c81-80b1-924de8908d8b
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
     - video_embed_field
+_core:
+  default_config_hash: cEz9U8XLmALhEXwAOp5sGZHWGGbKNzGTNBq5nSNImO8
 id: paragraph.ama_video
 field_name: ama_video
 entity_type: paragraph

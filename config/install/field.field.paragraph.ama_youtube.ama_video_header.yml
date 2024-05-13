@@ -1,10 +1,13 @@
+uuid: 75c8add5-085c-4c77-8890-aebebca21a1b
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.ama_video_header
     - paragraphs.paragraphs_type.ama_youtube
-id: paragraph.youtube.am_video_header
+_core:
+  default_config_hash: sBEE3D3mel5s-gYNyF7_85_ix2q71MoFZJgNWjgeyd4
+id: paragraph.ama_youtube.ama_video_header
 field_name: ama_video_header
 entity_type: paragraph
 bundle: ama_youtube

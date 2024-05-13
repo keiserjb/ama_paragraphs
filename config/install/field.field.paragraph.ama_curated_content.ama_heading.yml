@@ -1,9 +1,12 @@
+uuid: 0ae75ab9-cf93-4706-bf20-e6742a9e7569
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.ama_heading
     - paragraphs.paragraphs_type.ama_curated_content
+_core:
+  default_config_hash: FJlM61CYLtGRyT-m1_3dNI0yHdOjw4XVDbrX28NBUo4
 id: paragraph.ama_curated_content.ama_heading
 field_name: ama_heading
 entity_type: paragraph

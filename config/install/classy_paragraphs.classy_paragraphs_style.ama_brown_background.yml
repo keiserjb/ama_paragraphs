@@ -1,0 +1,7 @@
+uuid: d6821b22-8a45-455b-93a9-39a92fc5988d
+langcode: en
+status: true
+dependencies: {  }
+id: ama_brown_background
+label: 'Brown Background'
+classes: bg-light

@@ -1,8 +1,11 @@
+uuid: 1c59a09f-3ae9-43dd-b0a2-86998b74b9d7
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
+_core:
+  default_config_hash: yebHekMHvzANIA6SYLzGNeyWxzi_3Gg0ayj7NN8CqQI
 id: paragraph.ama_accordion_title
 field_name: ama_accordion_title
 entity_type: paragraph

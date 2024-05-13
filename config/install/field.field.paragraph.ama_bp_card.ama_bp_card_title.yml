@@ -1,9 +1,12 @@
+uuid: 8ad903e4-d9c5-493e-bd1c-8a70abc00df0
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.ama_bp_card_title
     - paragraphs.paragraphs_type.ama_bp_card
+_core:
+  default_config_hash: Mbmf8oH3R_-R05Ipm_OgiwDKeLFHBN9Nzc3fqIg1RJk
 id: paragraph.ama_bp_card.ama_bp_card_title
 field_name: ama_bp_card_title
 entity_type: paragraph

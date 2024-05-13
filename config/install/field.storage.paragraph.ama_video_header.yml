@@ -1,8 +1,11 @@
+uuid: 1ab45002-a4a6-46fd-b721-a00867fe3ecf
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
+_core:
+  default_config_hash: '-vKlyEUXlqmlKkN-LthVcBD_QJUmPLGXeRPOP7rQtD8'
 id: paragraph.ama_video_header
 field_name: ama_video_header
 entity_type: paragraph

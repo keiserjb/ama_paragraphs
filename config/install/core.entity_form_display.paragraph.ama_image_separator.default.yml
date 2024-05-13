@@ -1,3 +1,4 @@
+uuid: 0ecbe2cb-8df5-4e08-8dc1-01bc9fca13ec
 langcode: en
 status: true
 dependencies:
@@ -7,8 +8,9 @@ dependencies:
     - paragraphs.paragraphs_type.ama_image_separator
   module:
     - media_library
+    - media_library_edit
 _core:
-  default_config_hash: UEacR3LXcdRQszty86Laqgpj0tAnXS_8fQU7yw9egPE
+  default_config_hash: g2VITTBc1ghCW1uaeWVO1QIwjn29kM0L7AVg7X3Rj3I
 id: paragraph.ama_image_separator.default
 targetEntityType: paragraph
 bundle: ama_image_separator
@@ -26,8 +28,9 @@ content:
     region: content
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
 hidden:
-  ama_image_separator: true
   created: true
   status: true

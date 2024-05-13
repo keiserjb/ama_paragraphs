@@ -1,11 +1,19 @@
+uuid: 28757c5c-8967-41cc-8328-4a38d1543710
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.paragraph.ama_block.ama_block
+    - field.field.paragraph.ama_block.ama_classy_width
+    - field.field.paragraph.ama_block.ama_alignment
+    - field.field.paragraph.ama_block.ama_background_color
+    - field.field.paragraph.ama_block.ama_corners
     - paragraphs.paragraphs_type.ama_block
   module:
     - block_field
+    - field_formatter_class
+_core:
+  default_config_hash: G4nStioYD7E_hMI9gYlrRlKTuMmxD9z6lBVqI2VHohY
 id: paragraph.ama_block.default
 targetEntityType: paragraph
 bundle: ama_block
@@ -15,7 +23,13 @@ content:
     type: block_field
     label: hidden
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     weight: 0
     region: content
-hidden: {  }
+hidden:
+  ama_classy_width: true
+  ama_alignment: true
+  ama_background_color: true
+  ama_corners: true

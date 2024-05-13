@@ -1,9 +1,17 @@
+uuid: 3c827fe1-02ce-4d90-a818-0d38145188e6
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - layout_paragraphs
+_core:
+  default_config_hash: dKrwbiQyrNikJcXbWQLMVunciUxk_58UJ1kCp234WVM
 id: ama_image_separator
 label: 'Image Separator'
 icon_uuid: null
 icon_default: null
 description: 'Add an image in between paragraphs of text that can go full width.'
-behavior_plugins: {  }
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

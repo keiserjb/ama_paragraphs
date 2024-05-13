@@ -1,21 +1,36 @@
+uuid: f680af06-1797-4fc9-9335-618fc8293975
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.paragraph.ama_image_separator.ama_classy_width
     - field.field.paragraph.ama_image_separator.ama_image_separator
-    - image.style.large
     - paragraphs.paragraphs_type.ama_image_separator
   module:
     - field_formatter_class
-    - photoswipe
+    - field_label
 _core:
-  default_config_hash: rbEd6_N9dk_ugPctQTRtkKFwtwDHz2zENRhs6Fm1fxc
+  default_config_hash: 4gKPH3wlTyxZb-YuTe206K5_tWlMochKupP521AiLSI
 id: paragraph.ama_image_separator.default
 targetEntityType: paragraph
 bundle: ama_image_separator
 mode: default
 content:
+  ama_image_separator:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: image_separator
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: separator
+      field_label:
+        label_class: ''
+        label_value: ''
+        label_tag: ''
+    weight: 1
+    region: content
   ama_image_separator_media:
     type: entity_reference_entity_view
     label: hidden

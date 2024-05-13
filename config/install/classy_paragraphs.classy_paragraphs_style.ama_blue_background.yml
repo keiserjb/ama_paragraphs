@@ -1,0 +1,7 @@
+uuid: dc69b04e-1e77-4506-b38f-83e2bc1d95d7
+langcode: en
+status: true
+dependencies: {  }
+id: ama_blue_background
+label: 'Blue Background'
+classes: "bg-primary\r\ntext-white"

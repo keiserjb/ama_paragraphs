@@ -1,11 +1,18 @@
+uuid: aaa16e58-7680-4251-837f-12294eba7f4a
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.paragraph.ama_block.ama_block
+    - field.field.paragraph.ama_block.ama_classy_width
+    - field.field.paragraph.ama_block.ama_alignment
+    - field.field.paragraph.ama_block.ama_background_color
+    - field.field.paragraph.ama_block.ama_corners
     - paragraphs.paragraphs_type.ama_block
   module:
     - block_field
+_core:
+  default_config_hash: A5csGVY9I2c4ZABXRqU7VU3aU58IN-s6oAySAunIXyU
 id: paragraph.ama_block.default
 targetEntityType: paragraph
 bundle: ama_block
@@ -19,6 +26,30 @@ content:
       plugin_id: ''
       settings: {  }
       configuration_form: full
+    third_party_settings: {  }
+  ama_classy_width:
+    type: options_buttons
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  ama_alignment:
+    type: options_buttons
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  ama_background_color:
+    type: options_buttons
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  ama_corners:
+    type: options_buttons
+    weight: 4
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true

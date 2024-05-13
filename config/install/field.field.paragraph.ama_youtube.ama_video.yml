@@ -1,4 +1,4 @@
-
+uuid: cc926c68-9ab6-41c4-9346-fc96058d460d
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,14 @@ dependencies:
     - field.storage.paragraph.ama_video
     - paragraphs.paragraphs_type.ama_youtube
   module:
+    - disable_field
     - video_embed_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    edit_disable: none
+_core:
+  default_config_hash: 8YLmvXIZLZSkl59L4paWCap1646UzLyQKTH7c70tWNc
 id: paragraph.ama_youtube.ama_video
 field_name: ama_video
 entity_type: paragraph
@@ -19,7 +26,8 @@ default_value: {  }
 default_value_callback: ''
 settings:
   allowed_providers:
-    vimeo: vimeo
-    youtube: youtube
+    facebook: facebook
     youtube_playlist: youtube_playlist
+    youtube: youtube
+    vimeo: vimeo
 field_type: video_embed_field

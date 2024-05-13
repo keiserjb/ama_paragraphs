@@ -1,0 +1,45 @@
+uuid: f67a1d1c-ab76-4dfe-b298-9b594209dc24
+langcode: en
+status: true
+dependencies:
+  config:
+    - classy_paragraphs.classy_paragraphs_style.ama_rounded_corners
+    - field.storage.paragraph.ama_corners
+    - paragraphs.paragraphs_type.ama_block
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    edit_disable: none
+id: paragraph.ama_block.ama_corners
+field_name: ama_corners
+entity_type: paragraph
+bundle: ama_block
+label: Corners
+description: ''
+required: 0
+translatable: false
+default_value:
+  -
+    target_uuid: 4fccf262-b3cd-4185-a3bb-9dd87564134e
+default_value_callback: ''
+settings:
+  handler: classy_paragraphs
+  handler_settings:
+    filter:
+      type: target_bundles
+      target_bundles:
+        rounded_corners: rounded_corners
+        blue_background: 0
+        brown_background: 0
+        ama_container_width: 0
+        content_center: 0
+        content_left: 0
+        content_right: 0
+        ama_full_width: 0
+        white_background: 0
+      negate: 0
+    sort:
+      field: _none
+field_type: entity_reference

@@ -1,8 +1,17 @@
+uuid: b50074a6-e9c3-4e01-a523-fce01f4da959
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - layout_paragraphs
+_core:
+  default_config_hash: uVD_wRlAAgwauSssGnbXlKevdt59_p4zwD83a6fUvTU
 id: ama_cta
 label: 'Call to Action'
 icon_uuid: null
+icon_default: null
 description: 'Create a Call to Action.'
-behavior_plugins: {  }
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

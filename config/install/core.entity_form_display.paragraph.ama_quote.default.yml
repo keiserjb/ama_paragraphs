@@ -1,31 +1,44 @@
+uuid: 5709dd01-59ac-4a09-9478-f66162754d11
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.ama_quote.ama_quote_text
     - field.field.paragraph.ama_quote.ama_quote_author
+    - field.field.paragraph.ama_quote.ama_quote_text
+    - field.field.paragraph.ama_quote.ama_quote_icon
     - paragraphs.paragraphs_type.ama_quote
   module:
+    - fontawesome
     - text
+_core:
+  default_config_hash: ORvs-seN4yD0sQyigjttDWFWvJcD74fPrh8kLUPUpv8
 id: paragraph.ama_quote.default
 targetEntityType: paragraph
 bundle: ama_quote
 mode: default
 content:
-  ama_quote_text:
-    weight: 0
-    settings:
-      rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
   ama_quote_author:
-    weight: 1
+    type: string_textfield
+    weight: 2
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+  ama_quote_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  ama_quote_icon:
+    type: fontawesome_icon_widget
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   status: true

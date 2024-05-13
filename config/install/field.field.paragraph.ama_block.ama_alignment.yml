@@ -1,0 +1,38 @@
+uuid: 6fb244ed-cc03-4c12-af99-ed7c0287fd58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.ama_alignment
+    - paragraphs.paragraphs_type.ama_block
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    edit_disable: none
+id: paragraph.ama_block.ama_alignment
+field_name: ama_alignment
+entity_type: paragraph
+bundle: ama_block
+label: Alignment
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: classy_paragraphs
+  handler_settings:
+    filter:
+      type: target_bundles
+      target_bundles:
+        content_center: content_center
+        content_left: content_left
+        content_right: content_right
+        ama_container_width: 0
+        ama_full_width: 0
+      negate: 0
+    sort:
+      field: _none
+field_type: entity_reference

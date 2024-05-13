@@ -1,0 +1,35 @@
+uuid: dcc5dc2d-611d-4521-8afc-bcdd8287d1b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.ama_video_media
+    - media.type.other_remote_video
+    - paragraphs.paragraphs_type.ama_youtube
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    edit_disable: none
+id: paragraph.ama_youtube.ama_video_media
+field_name: ama_video_media
+entity_type: paragraph
+bundle: ama_youtube
+label: 'Video Media'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      other_remote_video: other_remote_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

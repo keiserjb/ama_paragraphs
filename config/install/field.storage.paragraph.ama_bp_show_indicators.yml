@@ -1,8 +1,11 @@
+uuid: 6e4bd7b5-acd6-4d35-b470-ad127aaf2183
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
+_core:
+  default_config_hash: '-bos73GxQ68f7qaqy0wIpHCkZzCcsaeLUHPk9Zfrbu0'
 id: paragraph.ama_bp_show_indicators
 field_name: ama_bp_show_indicators
 entity_type: paragraph

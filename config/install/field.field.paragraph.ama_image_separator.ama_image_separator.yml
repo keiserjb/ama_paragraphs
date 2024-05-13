@@ -1,3 +1,4 @@
+uuid: ed70f577-29fe-4309-8c84-a4dac83ef7a5
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - field.storage.paragraph.ama_image_separator
     - media.type.image
     - paragraphs.paragraphs_type.ama_image_separator
+_core:
+  default_config_hash: 8zt2GBYD_lzITdUmleAjW9aIQBgxNiuxxx5JTkJPfOU
 id: paragraph.ama_image_separator.ama_image_separator
 field_name: ama_image_separator
 entity_type: paragraph

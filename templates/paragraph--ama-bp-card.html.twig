@@ -45,7 +45,7 @@
   'paragraph',
   'paragraph--type--' ~ paragraph.bundle|clean_class,
   view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-  'card'|clean_class, 'text-center'|clean_class, 'h-100'
+  'card'|clean_class, 'h-100',
 ]
 %}
 
@@ -53,7 +53,11 @@
 
 {% set paragraph_class = 'card-' ~ paragraph.id.value %}
 
-
+{# Check if the background class is "bg-primary" #}
+{% set button_class = 'btn-primary' %}
+{% if 'bg-primary' in attributes.class %}
+  {% set button_class = 'btn-secondary' %}
+{% endif %}
 
 <div{{ attributes.addClass(classes).addClass(paragraph_class) }}>
   {{ content.ama_bp_card_image }}
@@ -65,11 +69,10 @@
     {% set button_text = content.ama_bp_card_button_text %}
     {{ content|without('ama_bp_card_image', 'ama_bp_card_link', 'ama_bp_card_style', 'ama_bp_card_text', 'ama_bp_card_title', 'ama_bp_card_button_text') }}
 
-    <div class="mt-auto d-grid gap-2">
+    <div class="mt-auto">
       {% if content.ama_bp_card_link %}
-        <a class="btn btn-lg btn-success" href="{{ content.ama_bp_card_link[0]['#url'] }}">{{ button_text }}</a>
+        <a class="btn {{ button_class }}" href="{{ content.ama_bp_card_link[0]['#url'] }}">{{ button_text }}</a>
       {% endif %}
     </div>
   </div>
 </div>
-  

@@ -1,0 +1,23 @@
+uuid: 1d54f076-2cec-46af-af40-29ead76f36ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+    - media_entity_facebook
+third_party_settings:
+  crop:
+    image_field: null
+id: facebook
+label: Facebook
+description: 'Embed Facebook posts and videos.'
+source: facebook
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_facebook
+field_map:
+  author_name: name
+  width: field_resource_width
+  height: field_resource_height
+  url: field_media_facebook

@@ -1,3 +1,4 @@
+uuid: 1cf9d9d1-cd53-4aa8-8d38-eb9e6337d48b
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - field.field.paragraph.ama_map.ama_map_header
     - field.field.paragraph.ama_map.ama_map_map
     - paragraphs.paragraphs_type.ama_map
+_core:
+  default_config_hash: LxpFdnwuYuwVuzCtITSJx7IfL3_YsH8YxbmpWue1Fvc
 id: paragraph.ama_map.default
 targetEntityType: paragraph
 bundle: ama_map

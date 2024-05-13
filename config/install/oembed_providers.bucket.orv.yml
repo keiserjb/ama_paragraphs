@@ -1,0 +1,11 @@
+uuid: 4a921393-73bc-40c3-b5e3-8f99238d30a8
+langcode: en
+status: true
+dependencies: {  }
+id: orv
+label: 'Other Remote Video'
+description: ''
+providers:
+  - Facebook
+  - Vimeo
+  - YouTube

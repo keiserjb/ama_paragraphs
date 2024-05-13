@@ -1,3 +1,4 @@
+uuid: 29dda16d-895e-4386-a4e9-0fe04dc7f7e2
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.ama_youtube
   module:
     - youtube
+_core:
+  default_config_hash: ipMoGeMcjrLFj9V9FwEYH5t607vBOhkmrxds0ZSSLCs
 id: paragraph.ama_youtube.ama_youtube_video
 field_name: ama_youtube_video
 entity_type: paragraph

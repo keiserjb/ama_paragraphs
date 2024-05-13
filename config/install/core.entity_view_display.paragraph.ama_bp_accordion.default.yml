@@ -1,3 +1,4 @@
+uuid: 8135a9c9-7197-4d36-8ec1-f419ece5720e
 langcode: en
 status: true
 dependencies:
@@ -9,6 +10,8 @@ dependencies:
     - paragraphs.paragraphs_type.ama_bp_accordion
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: kc00g5uOgQA2FiIjE1zP_fgkhxa_5lvXjDBbUQM_NoU
 id: paragraph.ama_bp_accordion.default
 targetEntityType: paragraph
 bundle: ama_bp_accordion
@@ -16,7 +19,7 @@ mode: default
 content:
   ama_bp_accordion_header:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -24,7 +27,7 @@ content:
     region: content
   ama_bp_accordion_section:
     type: entity_reference_revisions_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''

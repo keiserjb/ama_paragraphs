@@ -1,3 +1,4 @@
+uuid: cf040f69-9348-40b7-809d-f5fead1300e3
 langcode: en
 status: true
 dependencies:
@@ -7,6 +8,8 @@ dependencies:
     - paragraphs.paragraphs_type.ama_accordion_jquery
   module:
     - paragraphs
+_core:
+  default_config_hash: XjKQ5JIdC9-shFMYzDG2jgzJLq0eIbA0rz96aGaeVcA
 id: paragraph.ama_accordion_jquery.default
 targetEntityType: paragraph
 bundle: ama_accordion_jquery

@@ -1,9 +1,17 @@
+uuid: 39bb196d-7138-43e3-9b4d-2adac0706e3e
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - layout_paragraphs
+_core:
+  default_config_hash: 55S0ptszkvN-dUlHoF6iSuSuWhlU2UweucPEwQEXUEk
 id: ama_audio
 label: 'Audio File'
 icon_uuid: null
 icon_default: null
 description: 'Upload an audio file such as a podcast.'
-behavior_plugins: {  }
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

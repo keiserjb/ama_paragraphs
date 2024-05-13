@@ -1,3 +1,4 @@
+uuid: 45ec738f-5148-44dd-b03e-a652eb443b57
 langcode: en
 status: true
 dependencies:
@@ -6,18 +7,31 @@ dependencies:
     - field.field.paragraph.ama_map.ama_map_map
     - paragraphs.paragraphs_type.ama_map
   module:
+    - field_formatter_class
+    - field_label
+    - html_formatter
     - simple_gmap
+_core:
+  default_config_hash: jDZ_UbkHdCp0QxAYf-X508qGMvmrS8qWDClJKABMAe0
 id: paragraph.ama_map.default
 targetEntityType: paragraph
 bundle: ama_map
 mode: default
 content:
   ama_map_header:
-    type: string
+    type: html_field_formatter
     label: hidden
     settings:
-      link_to_entity: false
-    third_party_settings: {  }
+      tag: h3
+      class: ''
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: text-center
+      field_label:
+        label_class: ''
+        label_value: ''
+        label_tag: ''
     weight: 0
     region: content
   ama_map_map:
@@ -26,18 +40,24 @@ content:
     settings:
       include_map: true
       include_static_map: false
-      include_link: false
+      include_link: true
       include_text: false
-      iframe_height: '200'
-      iframe_width: '200'
+      iframe_height: '500'
+      iframe_width: '500'
       iframe_title: ''
       static_scale: 1
-      zoom_level: 14
+      zoom_level: 17
       link_text: 'View larger map'
       map_type: m
       langcode: en
       apikey: ''
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: text-center
+      field_label:
+        label_class: ''
+        label_value: ''
+        label_tag: ''
     weight: 1
     region: content
 hidden: {  }

@@ -1,9 +1,17 @@
+uuid: 682ba4c4-832b-4e1b-a232-79ea2e988835
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - layout_paragraphs
+_core:
+  default_config_hash: B-Ev6TMD_3x68X2f6_fara3KvDewaNgShGKQwCwj14k
 id: ama_map
 label: Map
 icon_uuid: null
 icon_default: null
 description: 'Add an address to generate a Google Map.'
-behavior_plugins: {  }
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

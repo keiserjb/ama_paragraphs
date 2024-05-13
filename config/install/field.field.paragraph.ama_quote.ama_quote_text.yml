@@ -1,3 +1,4 @@
+uuid: 42ef2f29-ceb4-40a1-9f43-07316b89d73b
 langcode: en
 status: true
 dependencies:
@@ -6,7 +7,9 @@ dependencies:
     - paragraphs.paragraphs_type.ama_quote
   module:
     - text
-id: paragraph.quote.paragraphs_ama_quote_text
+_core:
+  default_config_hash: X42eiuGkrizevJpkVMwWBkssMgujDll2BsbHRdFJHH8
+id: paragraph.ama_quote.ama_quote_text
 field_name: ama_quote_text
 entity_type: paragraph
 bundle: ama_quote
@@ -16,5 +19,6 @@ required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
-settings: {  }
+settings:
+  allowed_formats: {  }
 field_type: text_long

@@ -1,0 +1,20 @@
+uuid: a86e42a7-5a52-4971-aa2c-0f9ea2c519d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - classy_paragraphs
+    - paragraphs
+id: paragraph.ama_alignment
+field_name: ama_alignment
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: classy_paragraphs_style
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

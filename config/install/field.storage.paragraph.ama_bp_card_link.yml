@@ -1,9 +1,12 @@
+uuid: 5fa2f341-4ecb-43d9-8be2-43540eff86d0
 langcode: en
 status: true
 dependencies:
   module:
     - link
     - paragraphs
+_core:
+  default_config_hash: PgPGikX05kkyuvnCvtTkzIMxjLDIAnNqKL2C3IgIxB4
 id: paragraph.ama_bp_card_link
 field_name: ama_bp_card_link
 entity_type: paragraph

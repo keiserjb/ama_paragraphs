@@ -18,26 +18,32 @@
         "drupal/block_field": "^1.0@RC",
         "drupal/classy_paragraphs": "^1.0@RC",
         "drupal/default_paragraphs": "^2.0@RC",
+        "drupal/disable_field": "^3.0",
         "drupal/element_class_formatter": "^2.0@beta",
         "drupal/extra_image_field_classes": "^1.2",
         "drupal/field_formatter_class": "^1.6",
         "drupal/field_group": "^3.4",
+        "drupal/field_label": "^1.4",
+        "drupal/focal_point": "^2.0",
         "drupal/fontawesome": "^2.26",
         "drupal/heading": "^1.7",
         "drupal/html_formatter": "^2.0",
         "drupal/jquery_ui": "^1.6",
         "drupal/jquery_ui_accordion": "^2.0",
+        "drupal/layout_paragraphs": "^2.0",
+        "drupal/linked_field": "^1.5",
+        "drupal/media_entity_facebook": "4.0.x-dev@dev",
+        "drupal/media_library_edit": "^3.0",
+        "drupal/oembed_providers": "^2.1",
         "drupal/paragraphs": "^1.2",
         "drupal/paragraphs_jquery_ui_accordion": "^1.5",
-        "drupal/simple_gmap": "3.1.x-dev@dev",
-        "drupal/video_embed_facebook": "^1.x-dev@dev",
+        "drupal/simple_gmap": "^3.1",
+        "drupal/smart_trim": "^2.1",
+        "drupal/text_summary_options": "^2.0",
+        "drupal/video_embed_facebook": "^1.7",
         "drupal/video_embed_field": "^2.5",
         "drupal/youtube": "^2.0",
         "mglaman/composer-drupal-lenient": "^1.0"
-    },
-    "require-dev": {
-        "drupal/config_update": "^2.0@alpha",
-        "drupal/features": "~3.0"
     },
     "config": {
         "allow-plugins": {
@@ -48,20 +54,9 @@
     },
     "extra": {
         "patches": {
-            "drupal/simple_gmap": {
-                "Drupal 10": "https://www.drupal.org/files/issues/2022-12-24/simple_gmap.3.1.x-dev.rector.patch"
-            },
-            "drupal/video_embed_facebook": {
-                "Drupal 10": "https://www.drupal.org/files/issues/2022-06-16/video_embed_facebook.1.x-dev.rector.patch"
-            },
-            "drupal/default_paragraphs": {
-                "Drupal 10": "https://www.drupal.org/files/issues/2023-04-03/default_paragraphs.2.0.0-rc1.rector%234.patch"
+            "drupal/media_entity_facebook": {
+                "combine js and twig changes": "web/modules/patches/media_entity_facebook/combined.patch"
             }
         }
-    },
-    "drupal-lenient": {
-        "allowed-list": [
-            "drupal/simple_gmap", "drupal/video_embed_facebook", "drupal/default_paragraphs"
-        ]
     }
 }

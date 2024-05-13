@@ -1,0 +1,28 @@
+uuid: 2aa3f1c8-6ede-4041-bc1c-be5303250f73
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.ama_external_ama_content
+    - paragraphs.paragraphs_type.ama_curated_content
+  module:
+    - disable_field
+    - link
+third_party_settings:
+  disable_field:
+    add_disable: none
+    edit_disable: none
+id: paragraph.ama_curated_content.ama_external_ama_content
+field_name: ama_external_ama_content
+entity_type: paragraph
+bundle: ama_curated_content
+label: 'External AMA Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 16
+field_type: link

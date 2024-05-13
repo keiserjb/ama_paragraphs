@@ -1,3 +1,4 @@
+uuid: 16e5dc66-5c18-4e71-bbec-060c0729d2d3
 langcode: en
 status: true
 dependencies:
@@ -7,6 +8,8 @@ dependencies:
   module:
     - field_formatter_class
     - heading
+_core:
+  default_config_hash: sXIDKhKLhZqsdg7TdafOYA2nzNeSQ6OcZjc3qlm-wOE
 id: paragraph.ama_page_title.default
 targetEntityType: paragraph
 bundle: ama_page_title

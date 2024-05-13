@@ -1,9 +1,12 @@
+uuid: d352357b-48b1-4bd0-8329-bb74d8de3084
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - paragraphs
+_core:
+  default_config_hash: QO4_IoO02ry5WrVojOtxur-dZOG0n7X65DaTGyBKSYg
 id: paragraph.ama_curated_content
 field_name: ama_curated_content
 entity_type: paragraph

@@ -1,0 +1,22 @@
+uuid: 6b22f71e-aa08-4e9c-a4ae-0fd67791d122
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.facebook.field_facebook_embed
+    - paragraphs.paragraphs_type.facebook
+id: paragraph.facebook.default
+targetEntityType: paragraph
+bundle: facebook
+mode: default
+content:
+  field_facebook_embed:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

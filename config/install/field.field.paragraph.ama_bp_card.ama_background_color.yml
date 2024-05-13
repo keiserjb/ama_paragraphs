@@ -1,0 +1,45 @@
+uuid: f567a580-79c1-4926-b1a2-6b8c0acb71cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - classy_paragraphs.classy_paragraphs_style.ama_white_background
+    - field.storage.paragraph.ama_background_color
+    - paragraphs.paragraphs_type.ama_bp_card
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    edit_disable: none
+id: paragraph.ama_bp_card.ama_background_color
+field_name: ama_background_color
+entity_type: paragraph
+bundle: ama_bp_card
+label: 'Background Color'
+description: ''
+required: 0
+translatable: false
+default_value:
+  -
+    target_uuid: 78f8c076-fe97-447f-9714-7f24e15a316e
+default_value_callback: ''
+settings:
+  handler: classy_paragraphs
+  handler_settings:
+    filter:
+      type: target_bundles
+      target_bundles:
+        ama_blue_background: blue_background
+        ama_brown_background: brown_background
+        ama_white_background: white_background
+        ama_container_width: 0
+        ama_content_center: 0
+        ama_content_left: 0
+        ama_content_right: 0
+        ama_full_width: 0
+        ama_rounded_corners: 0
+      negate: 0
+    sort:
+      field: _none
+field_type: entity_reference

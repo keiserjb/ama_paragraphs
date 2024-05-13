@@ -1,8 +1,11 @@
+uuid: 51e0add1-4cfc-4161-aca0-0e716e0a2f55
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
+_core:
+  default_config_hash: FYjfiCQyuiWN3GVopxn0ECrwcSY5t-3mSwyERZs3wa4
 id: paragraph.ama_audio_title
 field_name: ama_audio_title
 entity_type: paragraph

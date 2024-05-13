@@ -1,0 +1,15 @@
+uuid: 706a420d-77da-4102-b024-45b452ffbb1e
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: ama_video
+label: Video
+icon_uuid: null
+icon_default: null
+description: 'Add a video from Vimeo, or YouTube.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

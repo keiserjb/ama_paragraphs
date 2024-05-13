@@ -67,11 +67,11 @@
         </div>
 
         <div class="modal fade" id="galleryModal{{ loop.index }}" tabindex="-1" aria-labelledby="galleryModalLabel{{ loop.index }}" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content modal-lg">
+          <div class="modal-dialog">
+            <div class="modal-content">
               <div class="modal-body">
                 <div class="image-container">
-                  {{ drupal_entity('media', item.content['#media'].id, 'your_desired_view_mode') }}
+                  {{ drupal_entity('media', item.content['#media'].id, 'large') }}
                 </div>
               </div>
               <div class="modal-close" data-bs-dismiss="modal">&times;</div>
@@ -94,11 +94,11 @@
           </div>
 
           <div class="modal fade" id="galleryModal{{ loop.index }}" tabindex="-1" aria-labelledby="galleryModalLabel{{ loop.index }}" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content modal-lg">
+            <div class="modal-dialog">
+              <div class="modal-content">
                 <div class="modal-body">
                   <div class="image-container">
-                    {{ drupal_entity('media', item.content['#media'].id, 'your_desired_view_mode') }}
+                    {{ drupal_entity('media', item.content['#media'].id, 'large') }}
                   </div>
                 </div>
                 <div class="modal-close" data-bs-dismiss="modal">&times;</div>

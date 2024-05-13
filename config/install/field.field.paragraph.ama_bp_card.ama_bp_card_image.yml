@@ -1,3 +1,4 @@
+uuid: 335d672c-e34a-4922-bb17-9fccc687f1fd
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - field.storage.paragraph.ama_bp_card_image
     - media.type.image
     - paragraphs.paragraphs_type.ama_bp_card
+_core:
+  default_config_hash: 96jSKOvw-GYKqYpv_EkC5EDTnY86wO7TQ3c72wTUXE8
 id: paragraph.ama_bp_card.ama_bp_card_image
 field_name: ama_bp_card_image
 entity_type: paragraph

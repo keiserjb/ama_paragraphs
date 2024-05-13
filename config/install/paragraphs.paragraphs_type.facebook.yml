@@ -1,0 +1,15 @@
+uuid: 3f4d0830-3c87-4263-9c93-5bc2f572fcb4
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: facebook
+label: Facebook
+icon_uuid: null
+icon_default: null
+description: 'Add a Facebook Post or Video.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

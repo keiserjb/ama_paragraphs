@@ -1,8 +1,11 @@
+uuid: cf554682-77fd-4798-a3d0-8979a025a263
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
+_core:
+  default_config_hash: A3BF6mvkAdbq3oJR49bObHeIKvWWwsZK7a-gkGLAINg
 id: paragraph.ama_banner_description
 field_name: ama_banner_description
 entity_type: paragraph

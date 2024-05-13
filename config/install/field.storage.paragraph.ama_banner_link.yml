@@ -1,9 +1,12 @@
+uuid: faac17dc-5438-41f2-bc5b-66bae2fb2f19
 langcode: en
 status: true
 dependencies:
   module:
     - link
     - paragraphs
+_core:
+  default_config_hash: U_1w5YsOmzLT491btsKqTrSXSmbbk9T6KfMeov5yqtg
 id: paragraph.ama_banner_link
 field_name: ama_banner_link
 entity_type: paragraph

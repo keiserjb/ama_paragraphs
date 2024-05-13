@@ -1,9 +1,12 @@
+uuid: 34b300f2-1b42-4307-9d07-c209f23abdce
 langcode: en
 status: true
 dependencies:
   module:
     - classy_paragraphs
     - paragraphs
+_core:
+  default_config_hash: sTH6bthEQXusJ2MtazwhGfZzBLwNs76W-yeDn3RTGVU
 id: paragraph.ama_classy_width
 field_name: ama_classy_width
 entity_type: paragraph

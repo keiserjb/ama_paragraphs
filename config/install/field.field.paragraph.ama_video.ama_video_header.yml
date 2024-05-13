@@ -1,0 +1,25 @@
+uuid: 3a108213-1f89-4502-8a27-ad650e4f7009
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.ama_video_header
+    - paragraphs.paragraphs_type.ama_video
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    edit_disable: none
+id: paragraph.ama_video.ama_video_header
+field_name: ama_video_header
+entity_type: paragraph
+bundle: ama_video
+label: Header
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

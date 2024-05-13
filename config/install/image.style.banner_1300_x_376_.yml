@@ -1,14 +1,17 @@
+uuid: d2a445e3-2b0e-43de-ae6a-38f2419cec25
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - focal_point
 name: banner_1300_x_376_
 label: 'Banner (1300 x 376)'
 effects:
-  f7da2a2b-b6d1-4262-84e3-7decaf19b9c5:
-    uuid: f7da2a2b-b6d1-4262-84e3-7decaf19b9c5
-    id: image_scale_and_crop
-    weight: 1
+  01b789e7-67d8-4525-b456-343d495bee39:
+    uuid: 01b789e7-67d8-4525-b456-343d495bee39
+    id: focal_point_scale_and_crop
+    weight: 2
     data:
       width: 1300
       height: 376
-      anchor: center-center
+      crop_type: focal_point

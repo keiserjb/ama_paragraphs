@@ -1,46 +1,127 @@
-/*Banner paragraph */
-
-.paragraph--type--ama_banner {
-  position: relative;
+.paragraph--type--ama-page-title .title {
+  font-family: "TrendaBold";
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0em;
+  margin-bottom: 16px;
 }
 
-.paragraph--type--ama_banner .background {
-  height: 366px;
-  /* background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
-}
-
-@media (max-width: 767px) {
-  .paragraph--type--ama_banner .background {
-    height: 250px;
+/*@media (min-width: 0px) and (max-width: 479px) {
+  .paragraph--type--ama-page-title .title {
+    font-size: 1.5625rem;
+    line-height: 1.875rem;
   }
 }
 
-.paragraph--type--ama_banner .data {
+@media (min-width: 480px) and (max-width: 620px) {
+  .paragraph--type--ama-page-title .title {
+    font-size: 1.75rem;
+    line-height: 2.1rem;
+  }
+}
+
+@media (min-width: 621px) and (max-width: 767px) {
+  .paragraph--type--ama-page-title .title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .paragraph--type--ama-page-title .title {
+    font-size: 2.1875rem;
+    line-height: 2.625rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1219px) {
+  .paragraph--type--ama-page-title .title {
+    font-size: 2.8125rem;
+    line-height: 3.375rem;
+  }
+}
+
+@media (min-width: 1220px) {
+  .paragraph--type--ama-page-title .title {
+    font-size: 2.8125rem;
+    line-height: 3.375rem;
+  }
+}*/
+
+/*Banner paragraph */
+
+.paragraph--type--ama-banner {
+  position: relative;
+}
+
+.paragraph--type--ama-banner .background {
+  /* height: 1125px; */
+  height: 40vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+}
+
+/*  @media (max-width: 1300px) {
+  .paragraph--type--ama-banner .background {
+    height: 731px;
+  }
+}
+
+@media (max-width: 960px) {
+  .paragraph--type--ama-banner .background {
+    height: 540px;
+  }
+}
+
+@media (max-width: 767px) {
+  .paragraph--type--ama-banner .background {
+    height: 431px;
+  }
+}
+
+@media (max-width: 560px) {
+  .paragraph--type--ama-banner .background {
+    height: 315px;
+  }
+}
+
+@media (max-width: 375px) {
+  .paragraph--type--ama-banner .background {
+    height: 211px;
+  }
+} */
+
+.paragraph--type--ama-banner .data {
   position: absolute;
   left: 65px;
-  bottom: 30px;
+  bottom: 0px;
   top: 0;
-  width: 40%;
+  width: 55%;
   background: rgba(3, 25, 41, 0.77);
-  padding-top: 45px;
+  padding-top: 10px;
   padding-left: 30px;
   padding-left: 30px;
   padding-right: 30px;
   box-sizing: border-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-@media (max-width: 1219px) {
-  .paragraph--type--ama_banner .data {
+/* @media (max-width: 1219px) {
+  .paragraph--type--ama-banner .data {
     width: 50%;
   }
-}
+} */
 
 @media (max-width: 1023px) {
-  .paragraph--type--ama_banner .data {
+  .paragraph--type--ama-banner .data {
     top: 0;
-    width: 60%;
+    width: 50%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -53,7 +134,7 @@
 }
 
 @media (max-width: 767px) {
-  .paragraph--type--ama_banner .data {
+  .paragraph--type--ama-banner .data {
     bottom: 0;
     top: 0;
     width: 100%;
@@ -61,7 +142,7 @@
   }
 }
 
-.paragraph--type--ama_banner .data .title {
+.paragraph--type--ama-banner .data .title {
   font-family: "TrendaBold";
   font-weight: 700;
   font-style: normal;
@@ -70,57 +151,65 @@
   margin-bottom: 16px;
 }
 
-@media (min-width: 0px) and (max-width: 479px) {
-  .paragraph--type--ama_banner .data .title {
+@media (min-width: 0px) and (max-width: 349px) {
+  .paragraph--type--ama-banner .data .title {
+    font-size: 1.25rem; /* Adjust the font size as needed */
+    line-height: 1.5rem; /* Adjust the line height as needed */
+  }
+}
+
+
+@media (min-width: 350px) and (max-width: 479px) {
+  .paragraph--type--ama-banner .data .title {
     font-size: 1.5625rem;
     line-height: 1.875rem;
   }
 }
 
 @media (min-width: 480px) and (max-width: 620px) {
-  .paragraph--type--ama_banner .data .title {
+  .paragraph--type--ama-banner .data .title {
     font-size: 1.75rem;
     line-height: 2.1rem;
   }
 }
 
 @media (min-width: 621px) and (max-width: 767px) {
-  .paragraph--type--ama_banner .data .title {
+  .paragraph--type--ama-banner .data .title {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .paragraph--type--ama_banner .data .title {
+  .paragraph--type--ama-banner .data .title {
     font-size: 2.1875rem;
     line-height: 2.625rem;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1219px) {
-  .paragraph--type--ama_banner .data .title {
+  .paragraph--type--ama-banner .data .title {
     font-size: 2.8125rem;
     line-height: 3.375rem;
   }
 }
 
 @media (min-width: 1220px) {
-  .paragraph--type--ama_banner .data .title {
+  .paragraph--type--ama-banner .data .title {
     font-size: 2.8125rem;
     line-height: 3.375rem;
   }
 }
 
-.paragraph--type--ama_banner .data .title a {
+.paragraph--type--ama-banner .data .title a {
   color: #FFFFFF;
 }
 
-.paragraph--type--ama_banner .data .title a:hover {
+.paragraph--type--ama-banner .data .title a:hover {
   opacity: 0.8;
 }
 
-.paragraph--type--ama_banner .data .summary {
+.paragraph--type--ama-banner .data .summary {
   font-family: "TrendaSemibold";
   font-weight: 600;
   font-style: normal;
@@ -130,48 +219,48 @@
 }
 
 @media (min-width: 0px) and (max-width: 479px) {
-  .paragraph--type--ama_banner .data .summary {
+  .paragraph--type--ama-banner .data .summary {
     font-size: 1rem;
     line-height: 1.2rem;
   }
 }
 
 @media (min-width: 480px) and (max-width: 620px) {
-  .paragraph--type--ama_banner .data .summary {
+  .paragraph--type--ama-banner .data .summary {
     font-size: 1rem;
     line-height: 1.2rem;
   }
 }
 
 @media (min-width: 621px) and (max-width: 767px) {
-  .paragraph--type--ama_banner .data .summary {
+  .paragraph--type--ama-banner .data .summary {
     font-size: 1.125rem;
     line-height: 1.35rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .paragraph--type--ama_banner .data .summary {
+  .paragraph--type--ama-banner .data .summary {
     font-size: 1.125rem;
     line-height: 1.35rem;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1219px) {
-  .paragraph--type--ama_banner .data .summary {
+  .paragraph--type--ama-banner .data .summary {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width: 1220px) {
-  .paragraph--type--ama_banner .data .summary {
+  .paragraph--type--ama-banner .data .summary {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
-.paragraph--type--ama_banner .data .summary p {
+.paragraph--type--ama-banner .data .summary p {
   font-family: "TrendaSemibold";
   font-weight: 600;
   font-style: normal;
@@ -181,42 +270,42 @@
 }
 
 @media (min-width: 0px) and (max-width: 479px) {
-  .paragraph--type--ama_banner .data .summary p {
+  .paragraph--type--ama-banner .data .summary p {
     font-size: 1rem;
     line-height: 1.2rem;
   }
 }
 
 @media (min-width: 480px) and (max-width: 620px) {
-  .paragraph--type--ama_banner .data .summary p {
+  .paragraph--type--ama-banner .data .summary p {
     font-size: 1rem;
     line-height: 1.2rem;
   }
 }
 
 @media (min-width: 621px) and (max-width: 767px) {
-  .paragraph--type--ama_banner .data .summary p {
+  .paragraph--type--ama-banner .data .summary p {
     font-size: 1.125rem;
     line-height: 1.35rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .paragraph--type--ama_banner .data .summary p {
+  .paragraph--type--ama-banner .data .summary p {
     font-size: 1.125rem;
     line-height: 1.35rem;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1219px) {
-  .paragraph--type--ama_banner .data .summary p {
+  .paragraph--type--ama-banner .data .summary p {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width: 1220px) {
-  .paragraph--type--ama_banner .data .summary p {
+  .paragraph--type--ama-banner .data .summary p {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }

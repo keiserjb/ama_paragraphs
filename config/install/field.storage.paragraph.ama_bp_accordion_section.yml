@@ -1,9 +1,12 @@
+uuid: 06403eba-8171-4ad8-bc97-c424d6370155
 langcode: en
 status: true
 dependencies:
   module:
     - entity_reference_revisions
     - paragraphs
+_core:
+  default_config_hash: hOzaw6_gxWfNJmpuv5pkJzVwUrMudBsvFaE-XCW-0FA
 id: paragraph.ama_bp_accordion_section
 field_name: ama_bp_accordion_section
 entity_type: paragraph

@@ -1,3 +1,4 @@
+uuid: 9c14e82b-8ae4-4088-839b-3850820f98de
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.ama_audio
   module:
     - file
+_core:
+  default_config_hash: kGBXoRzKSwfu7GYQ4ZnsgVuf_DqyzoCIQwqO3Uo6SeQ
 id: paragraph.ama_audio.ama_audio_file
 field_name: ama_audio_file
 entity_type: paragraph

@@ -1,6 +1,9 @@
+uuid: 13cb1479-bf6d-4938-8d4c-4e7c3d80885b
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: 79-kF3sbA7IBPhxR5GqiALN-7AXrIcP1YY9Awie0TM8
 id: ama_full_width
 label: 'Full Width'
 classes: full-width

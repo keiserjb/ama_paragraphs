@@ -1,28 +1,160 @@
+uuid: 3ce0afc2-e43d-4d06-9b2c-8a32486715bc
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.paragraph.ama_quote.ama_quote_author
     - field.field.paragraph.ama_quote.ama_quote_text
+    - field.field.paragraph.ama_quote.ama_quote_icon
     - paragraphs.paragraphs_type.ama_quote
   module:
+    - field_formatter_class
+    - field_group
+    - field_label
+    - fontawesome
+    - html_formatter
     - text
+third_party_settings:
+  field_group:
+    group_div:
+      children:
+        - group_blockquote
+      label: Div
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: col-lg-6-mx-auto
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_blockquote:
+      children:
+        - group_div_icon
+        - group_div_text
+        - group_footer
+      label: Blockquote
+      parent_name: group_div
+      region: content
+      weight: 4
+      format_type: html_element
+      format_settings:
+        classes: 'blockquote blockquote-custom bg-white p-5 shadow rounded'
+        show_empty_fields: false
+        id: ''
+        element: blockquote
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_div_icon:
+      children:
+        - ama_quote_icon
+      label: 'div icon'
+      parent_name: group_blockquote
+      region: content
+      weight: 5
+      format_type: html_element
+      format_settings:
+        classes: 'blockquote-custom-icon bg-primary shadow-sm'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_div_text:
+      children:
+        - ama_quote_text
+      label: 'div text'
+      parent_name: group_blockquote
+      region: content
+      weight: 6
+      format_type: html_element
+      format_settings:
+        classes: 'mb-0 mt-2 font-italic'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_footer:
+      children:
+        - ama_quote_author
+      label: Footer
+      parent_name: group_blockquote
+      region: content
+      weight: 7
+      format_type: html_element
+      format_settings:
+        classes: 'blockquote-footer pt-4 mt-4 border-top'
+        show_empty_fields: false
+        id: ''
+        element: footer
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+_core:
+  default_config_hash: _alfNvSI9-FQ5Z_lH7EYKxa6LH5xjMGS0e5GMPx80vs
 id: paragraph.ama_quote.default
 targetEntityType: paragraph
 bundle: ama_quote
 mode: default
 content:
+  ama_quote_author:
+    type: html_field_formatter
+    label: hidden
+    settings:
+      tag: cite
+      class: ''
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      field_label:
+        label_class: ''
+        label_value: ''
+        label_tag: ''
+    weight: 3
+    region: content
   ama_quote_text:
-    weight: 0
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
-  ama_quote_author:
-    weight: 1
+    weight: 2
+    region: content
+  ama_quote_icon:
+    type: fontawesome_icon_formatter
     label: hidden
     settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
+      layers: false
+    third_party_settings:
+      field_formatter_class:
+        class: text-white
+      field_label:
+        label_class: ''
+        label_value: ''
+        label_tag: ''
+    weight: 3
+    region: content
 hidden: {  }

@@ -1,9 +1,12 @@
+uuid: f8071db2-eeeb-4d77-8cdd-2ecf725c7c0c
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
     - youtube
+_core:
+  default_config_hash: nO8-nQcI6oLk_sniqWjDx5XUmwxSS1I3miRHnPE-E8Y
 id: paragraph.ama_youtube_video
 field_name: ama_youtube_video
 entity_type: paragraph

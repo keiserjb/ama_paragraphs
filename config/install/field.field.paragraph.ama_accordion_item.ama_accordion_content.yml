@@ -1,3 +1,4 @@
+uuid: dbb28f66-0af4-4868-92c1-afd03c526a7e
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.ama_accordion_item
   module:
     - text
+_core:
+  default_config_hash: WB90c_U1Wd_zaQtQSUksbXl5ifMSwhXbnKmosb8cRNA
 id: paragraph.ama_accordion_item.ama_accordion_content
 field_name: ama_accordion_content
 entity_type: paragraph
@@ -16,5 +19,6 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
+settings:
+  allowed_formats: {  }
 field_type: text_long

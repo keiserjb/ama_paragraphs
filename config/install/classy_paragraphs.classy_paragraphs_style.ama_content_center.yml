@@ -1,0 +1,7 @@
+uuid: c556c863-561d-4070-acb4-029521df9abf
+langcode: en
+status: true
+dependencies: {  }
+id: ama_content_center
+label: 'Content Center'
+classes: content-center

@@ -1,8 +1,17 @@
+uuid: 76584bc7-87de-4140-bc02-49124351bc29
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - layout_paragraphs
+_core:
+  default_config_hash: OYNh5M8uLMiZT7k-UVLI-uWdzcR7O014AbTXOO6vU0I
 id: ama_curated_content
 label: 'Curated Content'
 icon_uuid: null
+icon_default: null
 description: 'Create a list of hand curated content.'
-behavior_plugins: {  }
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

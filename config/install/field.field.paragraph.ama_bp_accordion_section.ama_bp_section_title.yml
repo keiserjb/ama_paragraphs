@@ -1,10 +1,13 @@
+uuid: e2fdddf7-400c-45c5-9349-d08433b1bfa5
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.ama_bp_section_title
     - paragraphs.paragraphs_type.ama_bp_accordion_section
-id: paragraph.accordion_section.ama_bp_section_title
+_core:
+  default_config_hash: iE988zc4HyTeQd6HaqgUqyU-CmGbwtvC-Uh5LXAnS6o
+id: paragraph.ama_bp_accordion_section.ama_bp_section_title
 field_name: ama_bp_section_title
 entity_type: paragraph
 bundle: ama_bp_accordion_section

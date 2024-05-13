@@ -1,6 +1,9 @@
+uuid: d544f278-f39a-49c4-a519-45f29e24058e
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: 6Js9hamxUGQJlZHdqleimdS--jACqO7g1eJi32mctlE
 id: ama_bp_accordion
 label: 'Bootstrap Accordion'
 icon_uuid: null

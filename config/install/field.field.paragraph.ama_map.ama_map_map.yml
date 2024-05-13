@@ -1,9 +1,12 @@
+uuid: 8f72bdb5-5e1c-4bdb-a98a-3fef15a205d2
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.ama_map_map
     - paragraphs.paragraphs_type.ama_map
+_core:
+  default_config_hash: znI-wVXEJ851DuzB6Q-KXDmfjOWwJzhUGmV0U8FD_wY
 id: paragraph.ama_map.ama_map_map
 field_name: ama_map_map
 entity_type: paragraph

@@ -1,6 +1,9 @@
+uuid: 3ffbced6-404f-4b55-b789-a618a9d2202e
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: dik1aWI31A8n1DHXw4cHKBawlLC7lyarEg-HZH9GGu0
 id: ama_container_width
 label: 'Container Width'
 classes: container-width

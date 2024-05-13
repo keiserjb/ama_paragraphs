@@ -1,9 +1,12 @@
+uuid: 2d03c3d9-2cc5-44d0-9084-500cac70cfa9
 langcode: en
 status: true
 dependencies:
   module:
     - media
     - paragraphs
+_core:
+  default_config_hash: 2PyKANqw5O2GUaiEWXkWq39tiY22jpW2lMRJFfSDcmQ
 id: paragraph.ama_photo
 field_name: ama_photo
 entity_type: paragraph

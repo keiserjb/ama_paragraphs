@@ -1,9 +1,12 @@
+uuid: 055dccd0-7bd2-43f7-b68c-6edbf22758c2
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.paragraph.ama_page_title.ama_page_title_text
     - paragraphs.paragraphs_type.ama_page_title
+_core:
+  default_config_hash: 0_nQYrwXLkQ9UsCE0YfuPceIrGDSBxGuNGhwpIeX_JY
 id: paragraph.ama_page_title.default
 targetEntityType: paragraph
 bundle: ama_page_title

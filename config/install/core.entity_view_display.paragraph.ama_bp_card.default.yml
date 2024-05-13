@@ -1,3 +1,4 @@
+uuid: 626cf3f2-aa3f-4fe5-8050-1cd9b54e81f2
 langcode: en
 status: true
 dependencies:
@@ -7,13 +8,16 @@ dependencies:
     - field.field.paragraph.ama_bp_card.ama_bp_card_link
     - field.field.paragraph.ama_bp_card.ama_bp_card_text
     - field.field.paragraph.ama_bp_card.ama_bp_card_title
+    - field.field.paragraph.ama_bp_card.ama_alignment
+    - field.field.paragraph.ama_bp_card.ama_background_color
     - paragraphs.paragraphs_type.ama_bp_card
   module:
-    - element_class_formatter
     - field_formatter_class
+    - field_label
     - link
+    - linked_field
 _core:
-  default_config_hash: wMMtqdgNlqJ1ZCFUIMUGbR_5S-t_GfiNAZL7bielQhI
+  default_config_hash: pqxbc0Ih9LJwjxXdVtnE45lCe26XDDtwjwTAOCaL0lU
 id: paragraph.ama_bp_card.default
 targetEntityType: paragraph
 bundle: ama_bp_card
@@ -31,9 +35,21 @@ content:
     type: entity_reference_entity_view
     label: hidden
     settings:
-      view_mode: default
+      view_mode: responsive_16_9
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      field_label:
+        label_class: ''
+        label_value: ''
+        label_tag: ''
+      linked_field:
+        linked: '1'
+        type: field
+        destination: ama_bp_card_link
+        advanced: {  }
+        token: ''
     weight: 0
     region: content
   ama_bp_card_link:
@@ -52,7 +68,13 @@ content:
     type: basic_string
     label: hidden
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: justify-content
+      field_label:
+        label_class: ''
+        label_value: ''
+        label_tag: ''
     weight: 2
     region: content
   ama_bp_card_title:
@@ -60,7 +82,15 @@ content:
     label: hidden
     settings:
       link_to_entity: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      field_label:
+        label_class: ''
+        label_value: ''
+        label_tag: ''
     weight: 1
     region: content
-hidden: {  }
+hidden:
+  ama_alignment: true
+  ama_background_color: true

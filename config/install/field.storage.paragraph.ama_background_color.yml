@@ -1,0 +1,20 @@
+uuid: c07b4ec7-1bdf-488d-bcbf-07ad810c0294
+langcode: en
+status: true
+dependencies:
+  module:
+    - classy_paragraphs
+    - paragraphs
+id: paragraph.ama_background_color
+field_name: ama_background_color
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: classy_paragraphs_style
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

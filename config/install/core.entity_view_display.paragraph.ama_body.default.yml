@@ -1,12 +1,14 @@
+uuid: 3b5e058d-cef0-47ec-87fe-90b684547728
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.paragraph.ama_body.ama_body
-    - field.field.paragraph.ama_body.ama_classy_width
     - paragraphs.paragraphs_type.ama_body
   module:
     - text
+_core:
+  default_config_hash: dTNHLzxUmkVs0v4Ma3rsG0C4k5iL0AZ3ZO-2_AZM5hc
 id: paragraph.ama_body.default
 targetEntityType: paragraph
 bundle: ama_body
@@ -19,5 +21,4 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-hidden:
-  ama_classy_width: true
+hidden: {  }

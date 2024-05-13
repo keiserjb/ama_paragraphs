@@ -1,3 +1,4 @@
+uuid: 4301f901-837f-4e70-8de4-ce29746ed9e3
 langcode: en
 status: true
 dependencies:
@@ -9,20 +10,22 @@ dependencies:
   module:
     - link
     - text
+_core:
+  default_config_hash: 98gviv39LptC_gM1QnPHznnA9FLJvAC5xJfXcOq81Zc
 id: paragraph.ama_cta.default
 targetEntityType: paragraph
 bundle: ama_cta
 mode: default
 content:
   ama_cta_description:
-    weight: 1
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: content
   ama_cta_link:
-    weight: 2
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -31,15 +34,15 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 2
     region: content
   ama_heading:
-    weight: 0
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
     region: content
 hidden:
   created: true

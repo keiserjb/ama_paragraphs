@@ -1,3 +1,4 @@
+uuid: 3f8bda28-c390-46a9-a306-4b95cfa7b87d
 langcode: en
 status: true
 dependencies:
@@ -6,18 +7,57 @@ dependencies:
     - paragraphs.paragraphs_type.ama_block
   module:
     - block_field
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    edit_disable: none
+_core:
+  default_config_hash: iyZbkyy3-utesINWxrPCFgpwRXC2WdJ1JwfDpTuNtn0
 id: paragraph.ama_block.ama_block
 field_name: ama_block
 entity_type: paragraph
 bundle: ama_block
 label: Block
 description: ''
-required: false
+required: 0
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  selection: blocks
+  selection: categories
   selection_settings:
-    plugin_ids: {  }
+    categories:
+      Announcements: Announcements
+      Block: Block
+      Content: Content
+      'Content block': 'Content block'
+      core: core
+      'Entity Block': 'Entity Block'
+      'Lists (Views)': 'Lists (Views)'
+      Menus: Menus
+      System: System
+      'Taxonomy term': 'Taxonomy term'
+      User: User
+      Views: Views
+      'Chaos Tools': 0
+      Comment: 0
+      'Contact message': 0
+      'Content Model Document': 0
+      'Content moderation state': 0
+      Crop: 0
+      'Custom menu link': 0
+      Devel: 0
+      File: 0
+      Forms: 0
+      Help: 0
+      'Kanban Log': 0
+      Media: 0
+      'Mercury Editor Template': 0
+      Paragraph: 0
+      Redirect: 0
+      'Shortcut link': 0
+      'URL alias': 0
+      Webform: 0
+      'Webform submission': 0
 field_type: block_field

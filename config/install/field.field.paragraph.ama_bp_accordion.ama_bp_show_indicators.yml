@@ -1,9 +1,12 @@
+uuid: 222c8700-e174-43de-81da-9ff5936ced45
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.ama_bp_show_indicators
     - paragraphs.paragraphs_type.ama_bp_accordion
+_core:
+  default_config_hash: rjGbI39rOu62H0NRA-jJk5nbegCEXGIiPQg4kwBQlfc
 id: paragraph.ama_bp_accordion.ama_bp_show_indicators
 field_name: ama_bp_show_indicators
 entity_type: paragraph

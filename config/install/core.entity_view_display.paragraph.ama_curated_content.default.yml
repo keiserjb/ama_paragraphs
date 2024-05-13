@@ -1,31 +1,60 @@
+uuid: 128b58ea-caa8-4395-ae7d-ecd4057906e3
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.paragraph.ama_curated_content.ama_curated_content
     - field.field.paragraph.ama_curated_content.ama_heading
+    - field.field.paragraph.ama_curated_content.ama_external_ama_content
     - paragraphs.paragraphs_type.ama_curated_content
+  module:
+    - field_formatter_class
+    - field_label
+    - heading
+    - link
+_core:
+  default_config_hash: j1Iijd-1tjDpWmnI10wwKcobN-t5QBSVhYE0VDNIJXM
 id: paragraph.ama_curated_content.default
 targetEntityType: paragraph
 bundle: ama_curated_content
 mode: default
 content:
   ama_curated_content:
-    weight: 1
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: teaser
       link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 1
     region: content
   ama_heading:
-    weight: 0
+    type: heading_text
     label: hidden
     settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
+      size: h3
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      field_label:
+        label_class: ''
+        label_value: ''
+        label_tag: ''
+    weight: 0
+    region: content
+  ama_external_ama_content:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: _blank
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 2
     region: content
 hidden:
   created: true

@@ -1,9 +1,18 @@
+uuid: 9d0f6441-05de-4a62-bd25-bb5f34e2ce4d
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.ama_curated_content
     - paragraphs.paragraphs_type.ama_curated_content
+  module:
+    - disable_field
+third_party_settings:
+  disable_field:
+    add_disable: none
+    edit_disable: none
+_core:
+  default_config_hash: uxNiDWdHt0ROqcS1TwGADPbszKHZBGJk9px006d6xX8
 id: paragraph.ama_curated_content.ama_curated_content
 field_name: ama_curated_content
 entity_type: paragraph
@@ -23,6 +32,4 @@ settings:
       field: _none
       direction: ASC
     auto_create: false
-    auto_create_bundle: page
 field_type: entity_reference
-

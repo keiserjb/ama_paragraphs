@@ -1,3 +1,4 @@
+uuid: 44f6b6c7-b355-442d-8f03-e67055150e40
 langcode: en
 status: true
 dependencies:
@@ -8,6 +9,8 @@ dependencies:
     - paragraphs.paragraphs_type.ama_bp_accordion_section
   module:
     - text
+_core:
+  default_config_hash: rj6N-dIDcHxirSXvJ4H5JQYOjWqDoh1jT_0gI2GNh0w
 id: paragraph.ama_bp_accordion_section.default
 targetEntityType: paragraph
 bundle: ama_bp_accordion_section

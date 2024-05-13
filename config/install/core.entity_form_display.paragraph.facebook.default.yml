@@ -1,0 +1,27 @@
+uuid: 23f19a90-531e-4c5e-ac5a-624b7efb0c13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.facebook.field_facebook_embed
+    - paragraphs.paragraphs_type.facebook
+  module:
+    - media_library
+    - media_library_edit
+id: paragraph.facebook.default
+targetEntityType: paragraph
+bundle: facebook
+mode: default
+content:
+  field_facebook_embed:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
+hidden:
+  created: true
+  status: true

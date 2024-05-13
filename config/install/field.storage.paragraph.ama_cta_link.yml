@@ -1,9 +1,12 @@
+uuid: fc05332e-8ce2-4dbc-8dc7-b8047a5f3b4b
 langcode: en
 status: true
 dependencies:
   module:
     - link
     - paragraphs
+_core:
+  default_config_hash: KnTdy4NX7JZIunLKz4EbWOCw1GBaxLeU8d8ZI2NSUFo
 id: paragraph.ama_cta_link
 field_name: ama_cta_link
 entity_type: paragraph

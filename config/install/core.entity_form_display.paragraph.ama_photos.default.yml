@@ -1,3 +1,4 @@
+uuid: 73ee25bd-8e4d-44a8-8756-31d0fd02ed25
 langcode: en
 status: true
 dependencies:
@@ -6,8 +7,9 @@ dependencies:
     - paragraphs.paragraphs_type.ama_photos
   module:
     - media_library
+    - media_library_edit
 _core:
-  default_config_hash: ucT1kPO3YBXMtpiyv89jlClI1gOLbiALE2Fae6ds_yU
+  default_config_hash: kK4_7srA_5YFuKHw7hqeqxND2ho36DtSGXEWira8Mbk
 id: paragraph.ama_photos.default
 targetEntityType: paragraph
 bundle: ama_photos
@@ -19,7 +21,9 @@ content:
     region: content
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
 hidden:
   created: true
   status: true

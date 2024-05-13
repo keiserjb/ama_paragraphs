@@ -1,14 +1,30 @@
+uuid: a4894ac7-66c0-4a75-9638-d04bfe698837
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.ama_youtube.ama_video
     - field.field.paragraph.ama_youtube.ama_video_header
+    - field.field.paragraph.ama_youtube.ama_youtube_video
+    - field.field.paragraph.ama_youtube.ama_video_media
     - paragraphs.paragraphs_type.ama_youtube
+  module:
+    - media_library
+    - video_embed_field
+    - youtube
+_core:
+  default_config_hash: vBstXkuzn8obHXenj0jyr1gQIkL9bGYu7y541YbAItw
 id: paragraph.ama_youtube.default
 targetEntityType: paragraph
 bundle: ama_youtube
 mode: default
 content:
+  ama_video:
+    type: video_embed_field_textfield
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   ama_video_header:
     type: string_textfield
     weight: 0
@@ -16,6 +32,20 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  ama_youtube_video:
+    type: youtube
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+    third_party_settings: {  }
+  ama_video_media:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
     third_party_settings: {  }
 hidden:
   created: true

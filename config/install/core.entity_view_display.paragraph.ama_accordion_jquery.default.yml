@@ -1,3 +1,4 @@
+uuid: 6ca76d62-38e6-42d5-b98a-dfcce5d74d96
 langcode: en
 status: true
 dependencies:
@@ -9,6 +10,8 @@ dependencies:
     - field_formatter_class
     - heading
     - paragraphs_jquery_ui_accordion
+_core:
+  default_config_hash: Y4Pay6luBt6EVNTpN288O9qvOfRT8Zos_f-W76dkkyE
 id: paragraph.ama_accordion_jquery.default
 targetEntityType: paragraph
 bundle: ama_accordion_jquery

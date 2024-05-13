@@ -1,6 +1,17 @@
+uuid: 1950baab-30a3-4221-823b-049793d44203
 langcode: en
 status: true
-dependencies: { }
+dependencies:
+  module:
+    - layout_paragraphs
+_core:
+  default_config_hash: bwLhev5t91YcwzU7rGLVPI-TsVmortZKZrzeJVgj8A0
 id: ama_separator
 label: Separator
+icon_uuid: null
+icon_default: null
 description: 'Use <em>Separator</em> to add a separator between paragraphs.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

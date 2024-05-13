@@ -1,0 +1,7 @@
+uuid: 4fccf262-b3cd-4185-a3bb-9dd87564134e
+langcode: en
+status: true
+dependencies: {  }
+id: ama_rounded_corners
+label: 'Rounded Corners'
+classes: rounded

@@ -1,6 +1,9 @@
+uuid: ca456342-1ae1-4be8-9fc9-da647fa1624a
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: yEMbA355lyCkANg0R-sFv49jKARKPnTm8_wUImyXPMU
 id: ama_banner
 label: Banner
 icon_uuid: null
